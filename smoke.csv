@@ -1,0 +1,3 @@
+project_id,github_repo,domain,doi,pypi_package,npm_package,stratum,source
+cffconvert,citation-file-format/cffconvert,citation,10.5281/zenodo.1162057,,,,
+cross-ref paper doi,Qiskit/qiskit,qc,10.7717/peerj-cs.86,,,random,random
