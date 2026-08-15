@@ -116,19 +116,29 @@ def from_zenodo_json(parsed):
 def from_doi_record(rec):
     if not isinstance(rec, dict) or not rec.get("resolved", True):
         return None
+    def _creator_person(c):
+        fam, giv = c.get("family"), c.get("given")
+        if not fam and not giv:
+            parsed = _person_from_name(c.get("name")) or {}
+            fam, giv = parsed.get("family"), parsed.get("given")
+        return {"family": fam, "given": giv, "orcid": c.get("orcid")}
+
     return {
         "title": (rec.get("titles") or [None])[0],
-        "authors": [
-            {"family": c.get("family") or (_person_from_name(c.get("name")) or {}).get("family"),
-             "given": c.get("given") or (_person_from_name(c.get("name")) or {}).get("given"),
-             "orcid": c.get("orcid")}
-            for c in rec.get("creators", [])
-        ],
+        "authors": [_creator_person(c) for c in rec.get("creators", [])],
         "version": rec.get("version"),
         "year": _year(rec.get("publication_year")),
         "doi": _doi_norm(rec.get("doi")),
         "license": (rec.get("rights") or [None])[0],
     }
+
+def _license_id(value):
+    if not value or not isinstance(value, str):
+        return value
+    if "\n" in value or len(value) > 60:
+        first = value.strip().splitlines()[0].strip()
+        return first[:60] if first else None
+    return value
 
 def from_pypi(rec):
     if not isinstance(rec, dict):
@@ -140,7 +150,7 @@ def from_pypi(rec):
         "version": rec.get("version"),
         "year": None,  # PyPI JSON does not expose a stable publication year at info level
         "doi": None,
-        "license": rec.get("license_expression") or rec.get("license"),
+        "license": _license_id(rec.get("license_expression") or rec.get("license")),
     }
 
 
@@ -154,7 +164,7 @@ def from_npm(rec):
         "version": rec.get("version"),
         "year": None,
         "doi": None,
-        "license": rec.get("license") if isinstance(rec.get("license"), str) else None,
+        "license": _license_id(rec.get("license") if isinstance(rec.get("license"), str) else None),
     }
 
 

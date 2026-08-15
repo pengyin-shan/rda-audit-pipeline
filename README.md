@@ -1,7 +1,5 @@
 # RDA Metadata-Consistency Audit Pipeline
-**Status: v0.2.0. Draft instrument, smoke-tested end-to-end on a 5-project
-sample under v0.1; restructured as an importable library with logic-identical
-harvest, normalization, and scoring.**
+**Status: v0.2.2. Draft instrument, smoke-tested end-to-end on a 5-project sample under v0.1; restructured as an importable library with logic-identical harvest, normalization, and scoring and analysis results**
 
 ## Setup
 ```bash
@@ -52,3 +50,8 @@ python3 -m rda_audit analyze
 - Record JOSS accepted 15 and pyOpenSci accepted 15 at commit 171c8d856ea7cd335536c6c871c9968cf5b350ac.
 - When manually verifying DOIs, noticed that for some repos, the Zenodo archive exists but the CITATION.CFF never mention it or README includes both badge for Software DOI but recommending to cite paper instead.
 - one npm detection removed for corpus.csv on review as community-published, not project-controlled.
+- Pre-run instrument and locked corpus: commit e706b2cc786f28d882eb7d0f5dbcc4ce05cf6702
+- One curation error (paper DOIs) caught at first-run review, emptied before verification stage
+- For adaptivecpp, lcoi, or thread-pool rows, the verdicts are now built on paper-DOI records that the projects themselves declared.
+- Registry detections were hand-reviewed; two (qiskit npm, fluidx3d PyPI) were removed as packages not controlled by the project
+- Hand verification identified one systematic normalization defect (DataCite creator records carrying full names in familyName caused token duplication and depressed author matching); it was corrected and the affected comparisons re-scored and re-verified

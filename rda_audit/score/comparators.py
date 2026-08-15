@@ -9,6 +9,7 @@ Thresholds are part of the registered instrument (v0.2.0): if one changes,
 log why and re-run tests/test_comparators.py.
 """
 import re
+FUZZY=90
 
 from rapidfuzz import fuzz
 
@@ -30,7 +31,7 @@ def cmp_title(a, b):
     if ca == cb:
         return "exact", ""
     score = fuzz.token_sort_ratio(ca, cb)
-    return ("minor", f"fuzzy={score:.0f}") if score >= 90 else ("conflict", f"fuzzy={score:.0f} | '{a}' vs '{b}'")
+    return ("minor", f"fuzzy={score:.0f}") if score >= FUZZY else ("conflict", f"fuzzy={score:.0f} | '{a}' vs '{b}'")
 
 def _author_key(p):
     return _clean(f"{p.get('given') or ''} {p.get('family') or p.get('_entity') or ''}")
@@ -44,8 +45,8 @@ def cmp_authors(a, b):
         return "missing", ""
     if ka == kb:
         return "exact", f"n={len(ka)}"
-    matched_a = sum(1 for x in ka if any(fuzz.token_sort_ratio(x, y) >= 90 for y in kb))
-    matched_b = sum(1 for y in kb if any(fuzz.token_sort_ratio(y, x) >= 90 for x in ka))
+    matched_a = sum(1 for x in ka if any(fuzz.token_sort_ratio(x, y) >= FUZZY for y in kb))
+    matched_b = sum(1 for y in kb if any(fuzz.token_sort_ratio(y, x) >= FUZZY for x in ka))
     if matched_a == len(ka) and matched_b == len(kb):
         detail = "order differs" if sorted(ka) == sorted(kb) else "name variants"
         return "minor", f"{detail}; n={len(ka)}"

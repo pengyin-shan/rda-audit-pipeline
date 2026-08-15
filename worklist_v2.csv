@@ -1,0 +1,276 @@
+﻿judgment_id,status,scope,project_id,field,pipeline_verdict,values,covered_pairs,n_rows,hand_verdict,agree,issue_class,note,checked
+K125,NEW,comp,martini,authors,minor,name variants; n=1,cff~doi_record;doi_record~readme,2,minor,1,,,
+K275,NEW,exact,neon-utilities-python,title,exact,(exact: open data/normalized/neon-utilities-python.json),cff~doi_record,1,exact,1,,,
+K121,carried,comp,agni,authors,conflict,|A|=1 |B|=3 matchedA=1 matchedB=1,cff~doi_record;codemeta~doi_record;zenodo_json~doi_record,3,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+K120,carried,comp,agni,title,conflict,fuzzy=58 | 'AGNI: An open-source model for extreme atmospheres on rocky exoplanets' vs 'AGNI: A radiative-convective model for lava planet atmospheres',cff~doi_record;zenodo_json~doi_record,2,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+K119,carried,comp,agni,year,minor,2025 vs 2024 (staleness?),cff~codemeta,1,minor,1,,cff and doi_record points to Journal paper,8/14/26
+K122,carried,comp,agni,year,minor,2024 vs 2025 (staleness?),codemeta~doi_record,1,minor,1,,cff and doi_record points to Journal paper,8/14/26
+K248,carried,exact,agni,version,exact,(exact: open data/normalized/agni.json),codemeta~zenodo_json,1,exact,1,,,8/15/26
+K025,carried,comp,amrex,authors,conflict,|A|=19 |B|=17 matchedA=14 matchedB=14,zenodo_json~readme;doi_record~readme,2,conflict,1,,readme's preferred caitaiton point to journal and journal author,8/14/26
+K028,carried,comp,amrex,doi,conflict,10.5281/zenodo.21763562 vs 10.21105/joss.01370,doi_record~readme,1,conflict,1,,readme's preferred caitaiton point to journal and journal doi,8/14/26
+K026,carried,comp,amrex,title,conflict,fuzzy=39 | 'AMReX-Codes/amrex: AMReX 26.08' vs 'AMReX: a framework for block-structured adaptive mesh refinement',doi_record~readme,1,conflict,1,,readme's preferred caitaiton point to journal and journal title,8/14/26
+K027,carried,comp,amrex,year,conflict,2026 vs 2019,doi_record~readme,1,conflict,1,,readme's preferred caitaiton point to journal and journal year,8/14/26
+K188,carried,comp,bibat,license,conflict,'Open Access' vs 'GNU General Public License version 3',doi_record~pypi,1,conflict,1,,,8/15/26
+K185,carried,comp,bibat,title,conflict,fuzzy=29 | 'teddygroves/bibat: v0.1.2' vs 'Bibat: batteries-included Bayesian analysis template',doi_record~readme,1,conflict,1,,,8/15/26
+K186,carried,comp,bibat,title,conflict,fuzzy=34 | 'teddygroves/bibat: v0.1.2' vs 'bibat',doi_record~pypi,1,conflict,1,,,8/15/26
+K189,carried,comp,bibat,title,conflict,fuzzy=18 | 'Bibat: batteries-included Bayesian analysis template' vs 'bibat',readme~pypi,1,conflict,1,,,8/15/26
+K187,carried,comp,bibat,version,conflict,'v0.1.2' vs '0.3.4',doi_record~pypi,1,conflict,1,,,8/15/26
+K109,carried,comp,biopsykit,authors,conflict,|A|=5 |B|=5 matchedA=4 matchedB=4,cff~doi_record,1,conflict,1,,cff has preferred cation to a Journal,8/14/26
+K108,carried,comp,biopsykit,title,conflict,fuzzy=23 | 'BioPsyKit' vs 'BioPsyKit: A Python package for the analysis of biopsychological data',cff~doi_record,1,conflict,1,,cff has preferred cation to a Journal,8/14/26
+K110,carried,comp,biopsykit,title,conflict,fuzzy=23 | 'BioPsyKit: A Python package for the analysis of biopsychological data' vs 'biopsykit',doi_record~pypi,1,conflict,1,,,8/14/26
+K227,carried,intra,biopsykit,doi,conflict,10.17605/osf.io/ebdrt vs 10.21105/joss.03702,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K226,carried,intra,biopsykit,title,conflict,fuzzy=23 | 'BioPsyKit' vs 'BioPsyKit: A Python package for the analysis of biopsychological data',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K097,carried,comp,catalyst,doi,conflict,10.5281/zenodo.12696447 vs 10.21105/joss.06720,cff~readme;doi_record~readme,2,conflict,1,,"readme point to a Journal in bibtex, which is also the preferred citation in cff",8/14/26
+K223,carried,intra,catalyst,doi,conflict,10.5281/zenodo.12696447 vs 10.21105/joss.06720,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K259,carried,exact,cblearn,doi,exact,(exact: open data/normalized/cblearn.json),doi_record~readme,1,exact,1,,,8/15/26
+K128,carried,comp,cheminformant,title,conflict,fuzzy=25 | 'ChemInformant' vs 'ChemInformant: A Robust and Workflow-Centric Python Client for High-Throughput PubChem Access',cff~zenodo_json;cff~doi_record;cff~readme,3,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+K130,carried,comp,cheminformant,title,conflict,fuzzy=25 | 'ChemInformant: A Robust and Workflow-Centric Python Client for High-Throughput PubChem Access' vs 'ChemInformant',zenodo_json~pypi;doi_record~pypi;readme~pypi,3,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+K129,carried,comp,cheminformant,year,minor,2026 vs 2025 (staleness?),cff~doi_record;cff~readme,2,minor,1,,readme's preferred caitaiton point to journal,8/15/26
+K258,carried,exact,cheminformant,authors,exact,n=1,cff~doi_record;zenodo_json~readme,2,exact,1,,same but both point to article,8/15/26
+K260,carried,exact,cheminformant,doi,exact,(exact: open data/normalized/cheminformant.json),doi_record~readme,1,exact,1,,same but both point to article,8/15/26
+K267,carried,exact,cheminformant,title,exact,(exact: open data/normalized/cheminformant.json),zenodo_json~doi_record,1,exact,1,,same but zenodo points to softare while doi_record points to article,8/15/26
+K261,carried,exact,cheminformant,version,exact,(exact: open data/normalized/cheminformant.json),cff~pypi,1,exact,1,,,8/15/26
+K272,carried,exact,cheminformant,year,exact,(exact: open data/normalized/cheminformant.json),doi_record~readme,1,exact,1,,same but both point to article,8/15/26
+K040,carried,comp,cirq,authors,conflict,|A|=1 |B|=1 matchedA=0 matchedB=0,cff~pypi;doi_record~pypi,2,minor,0,wrong-threshold,"Cirq Developers' vs 'The Cirq Developers', same entity; fuzzy fell below 90",8/14/26
+K039,carried,comp,cirq,doi,conflict,"10.5281/zenodo.4062499 vs 10.5281/zenodo.21080138 | both Zenodo: possible concept-vs-version DOI, HAND-CHECK",cff~doi_record,1,conflict,1,,cff doi is for archive of all versions. Doi_crecords for current version,8/14/26
+K038,carried,comp,cirq,version,minor,v-prefix only,cff~doi_record;doi_record~pypi,2,minor,1,,only doi has 'v',8/14/26
+K070,carried,comp,covalent,authors,conflict,|A|=28 |B|=1 matchedA=0 matchedB=0,doi_record~pypi,1,conflict,1,,,8/14/26
+K072,carried,comp,covalent,license,conflict,'Open Access' vs 'Apache License 2.0',doi_record~pypi,1,conflict,1,,,8/14/26
+K069,carried,comp,covalent,title,conflict,fuzzy=39 | 'AgnostiqHQ/covalent: v0.228.0-rc.0' vs 'covalent',doi_record~pypi,1,conflict,1,,,8/14/26
+K071,carried,comp,covalent,version,conflict,'v0.228.0-rc.0' vs '0.240.0',doi_record~pypi,1,conflict,1,,,8/14/26
+K058,carried,comp,cuda-quantum,authors,conflict,|A|=1 |B|=1 matchedA=0 matchedB=0,cff~pypi;doi_record~pypi,2,conflict,1,," ""The CUDA-Q development team"" for doi and cff while ""NVIDIA Corporation & Affiliates"" for pypi",8/14/26
+K057,carried,comp,cuda-quantum,title,conflict,fuzzy=67 | 'CUDA-Q' vs 'cuda-quantum',cff~pypi;doi_record~pypi,2,conflict,1,,,8/14/26
+K059,carried,comp,cuda-quantum,version,conflict,'0.15.0' vs '0.15.1',doi_record~pypi,1,conflict,1,,,8/14/26
+K031,carried,comp,dace,authors,conflict,|A|=28 |B|=5 matchedA=5 matchedB=5,cff~readme,1,conflict,1,,"both cff's preferred ciation and readme's bibtex are pointing to authors of the conference paper, while cff also has software info",8/14/26
+K033,carried,comp,dace,authors,conflict,|A|=28 |B|=1 matchedA=0 matchedB=0,cff~pypi,1,conflict,1,,"pypi points to the team ""SPCL @ ETH Zurich"" while cff points to the conference journal author",8/14/26
+K035,carried,comp,dace,authors,conflict,|A|=5 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,readme prefered citation is for conference paper while pypi has team name as author,8/14/26
+K030,carried,comp,dace,title,conflict,fuzzy=35 | 'DaCe - Data Centric Parallel Programming' vs 'Stateful Dataflow Multigraphs: A Data-Centric Model for Performance Portability on Heterogeneous Architectures',cff~readme,1,exact,1,,"both cff's preferred ciation and readme's bibtex are pointing to a conference paper, while cff also has software info",8/14/26
+K032,carried,comp,dace,title,conflict,fuzzy=19 | 'DaCe - Data Centric Parallel Programming' vs 'dace',cff~pypi,1,conflict,1,,cff points to conference paper while pypi point to software (github),8/14/26
+K034,carried,comp,dace,title,conflict,fuzzy=7 | 'Stateful Dataflow Multigraphs: A Data-Centric Model for Performance Portability on Heterogeneous Architectures' vs 'dace',readme~pypi,1,conflict,1,,readme prefered citation is for conference paper while pypi has team name as author,8/14/26
+K210,carried,intra,dace,authors,conflict,|A|=28 |B|=5 matchedA=5 matchedB=5,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K209,carried,intra,dace,title,conflict,fuzzy=35 | 'DaCe - Data Centric Parallel Programming' vs 'Stateful Dataflow Multigraphs: A Data-Centric Model for Performance Portability on Heterogeneous Architectures',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K262,carried,exact,dair,authors,exact,n=1,doi_record~readme,1,exact,1,,same but both point to article,8/15/26
+K254,carried,exact,dair,year,exact,(exact: open data/normalized/dair.json),doi_record~readme,1,exact,1,,same but both point to article,8/15/26
+K100,carried,comp,dart,authors,conflict,|A|=9 |B|=30 matchedA=3 matchedB=4,cff~doi_record,1,conflict,1,,cff has preferred ciatation to a Journal.,8/14/26
+K105,carried,comp,dart,authors,conflict,|A|=30 |B|=9 matchedA=4 matchedB=3,doi_record~readme,1,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+K103,carried,comp,dart,doi,conflict,10.5281/zenodo.7542588 vs 10.21105/joss.00500,cff~readme;doi_record~readme,2,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+K099,carried,comp,dart,title,conflict,fuzzy=45 | 'DART: Dynamic Animation and Robotics Toolkit' vs 'dartsim/dart: DART 6.13.0',cff~doi_record,1,conflict,1,,cff has preferred ciatation to a Journal.,8/14/26
+K104,carried,comp,dart,title,conflict,fuzzy=45 | 'dartsim/dart: DART 6.13.0' vs 'DART: Dynamic Animation and Robotics Toolkit',doi_record~readme,1,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+K101,carried,comp,dart,version,minor,v-prefix only,cff~doi_record,1,minor,1,,cff has preferred ciatation to a Journal.,8/14/26
+K102,carried,comp,dart,year,conflict,2023 vs 2018,cff~readme;doi_record~readme,2,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+K264,carried,exact,dart,doi,exact,(exact: open data/normalized/dart.json),cff~doi_record,1,exact,1,,same but cff's preferred citation points to the article,8/15/26
+K225,carried,intra,dart,doi,conflict,10.5281/zenodo.7542588 vs 10.21105/joss.00500,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K224,carried,intra,dart,year,conflict,2023 vs 2018,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K196,carried,intra,dealii,authors,conflict,|A|=1 |B|=10 matchedA=0 matchedB=0,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K195,carried,intra,dealii,title,conflict,"fuzzy=20 | 'deal.II' vs 'The deal.II finite element library: Design, features, and insights'",cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K112,carried,comp,debyecalculator,authors,conflict,|A|=6 |B|=1 matchedA=1 matchedB=1,cff~pypi;doi_record~pypi,2,conflict,1,,cff has preferred cation to a Journal,8/14/26
+K111,carried,comp,debyecalculator,title,conflict,"fuzzy=15 | 'A GPU-Accelerated Open-Source Python Package for Calculating Powder Diffraction, Small-Angle-, and Total Scattering with the Debye Scattering Equation' vs 'debyecalculator'",cff~pypi;doi_record~pypi,2,conflict,1,,cff has preferred cation to a Journal,8/14/26
+K113,carried,comp,debyecalculator,version,conflict,'v1.0.7' vs '1.0.14',doi_record~pypi,1,conflict,1,,,8/14/26
+K228,carried,intra,debyecalculator,doi,conflict,10.5281/zenodo.10659528 vs 10.21105/joss.06024,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K131,carried,comp,earthpy,authors,conflict,|A|=5 |B|=7 matchedA=4 matchedB=4,zenodo_json~doi_record;zenodo_json~readme,2,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+K132,carried,comp,earthpy,authors,conflict,|A|=5 |B|=1 matchedA=1 matchedB=1,zenodo_json~pypi,1,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+K134,carried,comp,earthpy,authors,conflict,|A|=7 |B|=1 matchedA=1 matchedB=1,doi_record~pypi;readme~pypi,2,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+K133,carried,comp,earthpy,title,conflict,fuzzy=11 | 'EarthPy: A Python package that makes it easier to explore and plot raster and vector data using open source Python tools.' vs 'earthpy',doi_record~pypi;readme~pypi,2,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+K250,carried,exact,earthpy,doi,exact,(exact: open data/normalized/earthpy.json),doi_record~readme,1,exact,1,,,8/15/26
+K006,carried,comp,elmerfem,authors,conflict,|A|=25 |B|=20 matchedA=17 matchedB=17,cff~doi_record,1,conflict,1,,,8/14/26
+K007,carried,comp,elmerfem,license,conflict,'GPL-2.0-or-later' vs 'gpl-2.0+',cff~doi_record,1,conflict,1,,,8/14/26
+K005,carried,comp,elmerfem,title,conflict,fuzzy=46 | 'ElmerFEM' vs 'ElmerCSC/elmerfem: Elmer 9.0',cff~doi_record,1,conflict,1,,,8/14/26
+K009,carried,comp,envpool,authors,conflict,|A|=12 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,"pypi only has """"EnvPool Contributors""",8/14/26
+K008,carried,comp,envpool,title,conflict,fuzzy=17 | 'EnvPool: A Highly Parallel Reinforcement Learning Environment Execution Engine' vs 'envpool',readme~pypi,1,conflict,1,,,8/14/26
+K162,carried,comp,eomaps,title,conflict,fuzzy=16 | 'EOmaps: A python package to visualize and analyze geographical datasets.' vs 'eomaps',readme~pypi,1,conflict,1,,,8/15/26
+K169,carried,comp,felupe,authors,conflict,|A|=2 |B|=1 matchedA=1 matchedB=1,cff~doi_record,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K173,carried,comp,felupe,license,conflict,'gpl-3.0' vs 'GPL-3.0-or-later',doi_record~pypi,1,conflict,1,,,8/15/26
+K168,carried,comp,felupe,title,conflict,fuzzy=60 | 'FElupe: Finite element analysis for continuum mechanics of solid bodies' vs 'FElupe: Finite Element Analysis',cff~doi_record,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K170,carried,comp,felupe,title,conflict,fuzzy=16 | 'FElupe: Finite element analysis for continuum mechanics of solid bodies' vs 'felupe',cff~pypi,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K171,carried,comp,felupe,title,conflict,fuzzy=33 | 'FElupe: Finite Element Analysis' vs 'felupe',doi_record~pypi,1,conflict,1,,,8/15/26
+K172,carried,comp,felupe,version,conflict,'v9.4.0' vs '10.1.0',doi_record~pypi,1,conflict,1,,,8/15/26
+K244,carried,intra,felupe,doi,conflict,10.5281/zenodo.17202699 vs 10.21105/joss.09160,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K208,carried,intra,geant4,authors,conflict,|A|=2 |B|=99 matchedA=0 matchedB=0,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K207,carried,intra,geant4,title,conflict,fuzzy=34 | 'Geant4' vs 'Recent developments in Geant4',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K232,carried,intra,genomesizer,doi,conflict,10.5281/zenodo.17971801 vs 10.21105/joss.08759,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K231,carried,intra,geometry,doi,conflict,10.5281/zenodo.20281747 vs 10.21105/joss.10328,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K081,carried,comp,grassmann-jl,doi,conflict,"10.5281/zenodo.101519786 vs 10.5281/zenodo.21863412 | both Zenodo: possible concept-vs-version DOI, HAND-CHECK",cff~doi_record,1,conflict,1,,cff has preferred citation pointing to an article,8/14/26
+K079,carried,comp,grassmann-jl,version,conflict,'0.8.33' vs 'v0.8.46',cff~doi_record,1,conflict,1,,cff has preferred citation pointing to an article,8/14/26
+K080,carried,comp,grassmann-jl,year,minor,2025 vs 2026 (staleness?),cff~doi_record,1,minor,1,,cff has preferred citation pointing to an article,8/14/26
+K263,carried,exact,grassmann-jl,title,exact,(exact: open data/normalized/grassmann-jl.json),cff~doi_record,1,exact,1,,same but cff's preferred citation points to the article,8/15/26
+K220,carried,intra,grassmann-jl,title,conflict,fuzzy=32 | 'Grassmann.jl' vs 'Differential geometric algebra with Leibniz and Grassmann',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K221,carried,intra,grassmann-jl,year,conflict,2025 vs 2019,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K022,carried,comp,hdf5,doi,conflict,"10.5281/zenodo.17808614 vs 10.5281/zenodo.21716856 | both Zenodo: possible concept-vs-version DOI, HAND-CHECK",cff~doi_record,1,conflict,1,,"cff has """"Zenodo DOI for all versions"" for ""10.5281/zenodo.17808614"" in the identifiers section, while doi_record has ""10.5281/zenodo.21716856"" for ""Hierarchical Data Format, version 5""",8/14/26
+K002,carried,comp,horovod,authors,conflict,|A|=2 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,"pypi only has ""The Horovod Authors""",8/14/26
+K001,carried,comp,horovod,title,conflict,fuzzy=21 | 'Horovod: fast and easy distributed deep learning in TensorFlow' vs 'horovod',readme~pypi,1,conflict,1,,,8/14/26
+K012,carried,comp,kernel,doi,conflict,"10.5281/zenodo.14645534 vs 10.5281/zenodo.18999584 | both Zenodo: possible concept-vs-version DOI, HAND-CHECK",cff~doi_record,1,conflict,1,,"cff include concept DOI and viersioned DOI, while doi_record 's doi is in datacite registray ",8/14/26
+K010,carried,comp,kernel,version,conflict,'0.10.0' vs 'v0.13.2',cff~doi_record,1,conflict,1,,,8/14/26
+K011,carried,comp,kernel,year,minor,2025 vs 2026 (staleness?),cff~doi_record,1,minor,1,,,8/14/26
+K265,carried,exact,kernel,title,exact,(exact: open data/normalized/kernel.json),cff~doi_record,1,exact,1,,same but cff's preferred citation points to the article,8/15/26
+K198,carried,intra,kernel,authors,conflict,|A|=11 |B|=3 matchedA=2 matchedB=2,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K200,carried,intra,kernel,doi,conflict,10.5281/zenodo.14645534 vs 10.1145/3365137.3365395,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K197,carried,intra,kernel,title,conflict,fuzzy=39 | 'The Hermit Kernel' vs 'Exploring Rust for Unikernel Development',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K199,carried,intra,kernel,year,conflict,2025 vs 2019,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K191,carried,intra,kokkos,authors,conflict,|A|=1 |B|=20 matchedA=0 matchedB=0,cff~cff_preferred,1,conflict,1,,,8/15/26
+K190,carried,intra,kokkos,title,conflict,fuzzy=19 | 'Kokkos' vs 'Kokkos 3: Programming Model Extensions for the Exascale Era',cff~cff_preferred,1,conflict,1,,,8/15/26
+K126,carried,comp,martini,doi,conflict,10.5281/zenodo.11198185 vs 10.21105/joss.06860,cff~readme;doi_record~readme,2,conflict,1,,cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+K124,carried,comp,martini,title,conflict,fuzzy=28 | 'MARTINI: Mock Array Radio Telescope Interferometry of the Neutral ISM' vs 'kyleaoman/martini: v2.0.12',cff~doi_record,1,conflict,1,,cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+K127,carried,comp,martini,title,conflict,fuzzy=28 | 'kyleaoman/martini: v2.0.12' vs 'MARTINI: Mock Array Radio Telescope Interferometry of the Neutral ISM',doi_record~readme,1,conflict,1,,paper-ref: cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+K233,carried,intra,martini,doi,conflict,10.5281/zenodo.11198185 vs 10.21105/joss.06860,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K123,carried,comp,mdentropy,authors,conflict,|A|=2 |B|=2 matchedA=1 matchedB=1,doi_record~readme,1,conflict,0,parse-error,LaTeX-escaped accent (Hern'andez vs Hernández) blocked one name match,8/15/26
+K004,carried,comp,mfem,authors,conflict,|A|=1 |B|=2 matchedA=0 matchedB=0,cff~doi_record,1,conflict,1,,,8/14/26
+K003,carried,comp,mfem,title,conflict,fuzzy=89 | 'MFEM: Modular Finite Element Methods [Software]' vs 'Modular Finite Element Methods (MFEM)',cff~doi_record,1,conflict,1,,,8/14/26
+K193,carried,intra,mfem,authors,conflict,|A|=1 |B|=17 matchedA=0 matchedB=0,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K194,carried,intra,mfem,doi,conflict,10.11578/dc.20171025.1248 vs 10.1016/j.camwa.2020.06.009,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K192,carried,intra,mfem,title,conflict,fuzzy=79 | 'MFEM: Modular Finite Element Methods [Software]' vs 'MFEM: A Modular Finite Element Methods Library',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K136,carried,comp,montepy,authors,conflict,|A|=4 |B|=5 matchedA=4 matchedB=4,cff~doi_record,1,conflict,1,,cff's preferred citation points to an article,8/15/26
+K135,carried,comp,montepy,title,conflict,"fuzzy=18 | 'MontePy: a Python library for reading, editing, and writing MCNP input files.' vs 'MontePy'",cff~doi_record,1,conflict,1,,cff's preferred citation points to an article,8/15/26
+K137,carried,comp,montepy,title,conflict,"fuzzy=18 | 'MontePy: a Python library for reading, editing, and writing MCNP input files.' vs 'montepy'",cff~pypi,1,conflict,1,,cff's preferred citation points to an article,8/15/26
+K138,carried,comp,montepy,version,conflict,'0.5.5' vs '1.5.0',doi_record~pypi,1,conflict,1,,,8/15/26
+K234,carried,intra,montepy,doi,conflict,10.5281/zenodo.15185507 vs 10.21105/joss.07951,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K024,carried,comp,mpi4py,authors,conflict,|A|=3 |B|=1 matchedA=1 matchedB=1,cff~pypi;doi_record~pypi,2,conflict,1,,cff used preferred citation to a Journal,8/14/26
+K023,carried,comp,mpi4py,title,conflict,fuzzy=50 | 'MPI for Python' vs 'mpi4py',cff~pypi;doi_record~pypi,2,conflict,1,,"doi and record has same name whiel pypi has a different name, but cff asked to use preferred citation, which is a journal",8/14/26
+K270,carried,exact,mpi4py,license,exact,alias-normalized,doi_record~pypi,1,exact,1,,"same, just case difference",8/15/26
+K205,carried,intra,mpi4py,authors,conflict,|A|=3 |B|=2 matchedA=2 matchedB=2,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K206,carried,intra,mpi4py,doi,conflict,10.5281/zenodo.5645087 vs 10.1109/mcse.2021.3083216,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K204,carried,intra,mpi4py,title,conflict,fuzzy=28 | 'MPI for Python' vs 'mpi4py: Status Update After 12 Years of Development',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K029,carried,comp,mpich,authors,conflict,|A|=9 |B|=1 matchedA=0 matchedB=0,doi_record~pypi;readme~pypi,2,conflict,1,,"pypi used ""MPICH Team"" only while readme's bibtex point to Jounal",8/14/26
+K268,carried,exact,mpich,title,exact,(exact: open data/normalized/mpich.json),doi_record~pypi,1,exact,1,,"same, just case difference",8/15/26
+K139,carried,comp,neon-utilities-python,version,minor,v-prefix only,cff~doi_record,1,minor,1,,,8/15/26
+K269,carried,exact,neon-utilities-python,authors,exact,n=3,cff~doi_record,1,exact,1,,,8/15/26
+K142,carried,comp,nsevdx,authors,conflict,|A|=2 |B|=1 matchedA=1 matchedB=1,cff~pypi;doi_record~pypi,2,conflict,1,,pypi has the first author only,8/15/26
+K141,carried,comp,nsevdx,title,conflict,fuzzy=14 | 'nsEVDx: A Python Library for Modeling Non-Stationary Extreme Value Distributions' vs 'nsEVDx',cff~pypi;doi_record~pypi,2,conflict,1,,cff and doi has same name with version difference. Pypi has a short name with same vversion of cff,8/15/26
+K140,carried,comp,nsevdx,version,conflict,'0.2.4' vs 'v0.1.0',cff~doi_record,1,conflict,1,,,8/15/26
+K143,carried,comp,nsevdx,version,conflict,'v0.1.0' vs '0.2.4',doi_record~pypi,1,conflict,1,,,8/15/26
+K044,carried,comp,openfermion,authors,conflict,|A|=1 |B|=37 matchedA=0 matchedB=0,cff~doi_record,1,conflict,1,,"cff has only ""The OpenFermion Developers"" for software author, but also prefereed caitation to the paper authors, which is the one in doi_record",8/14/26
+K043,carried,comp,openfermion,title,conflict,fuzzy=29 | 'OpenFermion' vs 'OpenFermion: the electronic structure package for quantum computers',cff~doi_record,1,conflict,1,,"cff has attributes for software, but also prefereed caitation to the paper, which is the one in doi_record",8/14/26
+K045,carried,comp,openfermion,year,conflict,2026 vs 2020,cff~doi_record,1,conflict,1,,"cff has 2026 as the year for software, with preferred citation to doi_record's paper with a different year",8/14/26
+K212,carried,intra,openfermion,authors,conflict,|A|=1 |B|=37 matchedA=0 matchedB=0,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K211,carried,intra,openfermion,title,conflict,fuzzy=29 | 'OpenFermion' vs 'OpenFermion: The Electronic Structure Package for Quantum Computers',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K213,carried,intra,openfermion,year,conflict,2026 vs 2020,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K021,carried,comp,openmc,authors,conflict,|A|=11 |B|=6 matchedA=3 matchedB=3,cff~doi_record,1,conflict,1,,,8/14/26
+K020,carried,comp,openmc,title,conflict,fuzzy=16 | 'OpenMC' vs 'OpenMC: A state-of-the-art Monte Carlo code for research and development',cff~doi_record,1,conflict,1,,"both cff's preferred ciation and doi are pointing to the journal ""OpenMC: A state-of-the-art Monte Carlo code for research and development"" instead of cff's software ""OpenMC""",8/14/26
+K203,carried,intra,openmc,authors,conflict,|A|=11 |B|=6 matchedA=3 matchedB=3,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K202,carried,intra,openmc,title,conflict,fuzzy=16 | 'OpenMC' vs 'OpenMC: A state-of-the-art Monte Carlo code for research and development',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K152,carried,comp,plenoptic,authors,conflict,|A|=14 |B|=8 matchedA=7 matchedB=7,cff~readme;doi_record~readme,2,conflict,1,,readme has bibtext points to an article,8/15/26
+K154,carried,comp,plenoptic,authors,conflict,|A|=14 |B|=1 matchedA=0 matchedB=0,cff~pypi;doi_record~pypi,2,conflict,1,,pypi only has one author,8/15/26
+K156,carried,comp,plenoptic,authors,conflict,|A|=8 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,readme has bibtext points to an article,8/15/26
+K153,carried,comp,plenoptic,title,conflict,fuzzy=23 | 'Plenoptic: A platform for synthesizing model-optimized visual stimuli' vs 'plenoptic',cff~pypi;doi_record~pypi;readme~pypi,3,conflict,1,,,8/15/26
+K155,carried,comp,plenoptic,year,conflict,2026 vs 2023,doi_record~readme,1,conflict,1,,readme has bibtext points to an article,8/15/26
+K161,carried,comp,pygmt,title,conflict,fuzzy=17 | 'PyGMT: A Python interface for the Generic Mapping Tools' vs 'pygmt',cff~pypi;doi_record~pypi,2,conflict,1,,,8/15/26
+K160,carried,comp,pygmt,version,minor,v-prefix only,cff~doi_record;doi_record~pypi,2,minor,1,,,8/15/26
+K240,carried,intra,pygmt,authors,conflict,|A|=19 |B|=8 matchedA=7 matchedB=7,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K241,carried,intra,pygmt,doi,conflict,10.5281/zenodo.19398871 vs 10.1029/2026gc013105,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K239,carried,intra,pygmt,title,conflict,fuzzy=64 | 'PyGMT: A Python interface for the Generic Mapping Tools' vs 'PyGMT: Bridging Python and the Generic Mapping Tools for Geospatial Visualization and Analysis',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K049,carried,comp,pyquil,authors,conflict,|A|=20 |B|=3 matchedA=3 matchedB=3,doi_record~readme,1,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+K052,carried,comp,pyquil,authors,conflict,|A|=20 |B|=1 matchedA=0 matchedB=0,doi_record~pypi,1,conflict,1,,"pypi has """"Rigetti Computing"""" as general author",8/14/26
+K056,carried,comp,pyquil,authors,conflict,|A|=3 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+K054,carried,comp,pyquil,license,conflict,'Open Access' vs 'Apache-2.0',doi_record~pypi,1,conflict,1,,,8/14/26
+K048,carried,comp,pyquil,title,conflict,fuzzy=43 | 'PyQuil: Quantum programming in Python' vs 'A Practical Quantum Instruction Set Architecture',doi_record~readme,1,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+K051,carried,comp,pyquil,title,conflict,fuzzy=29 | 'PyQuil: Quantum programming in Python' vs 'pyquil',doi_record~pypi,1,conflict,1,,,8/14/26
+K055,carried,comp,pyquil,title,conflict,fuzzy=11 | 'A Practical Quantum Instruction Set Architecture' vs 'pyquil',readme~pypi,1,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+K053,carried,comp,pyquil,version,conflict,'v2.17.0' vs '4.17.0',doi_record~pypi,1,conflict,1,,,8/14/26
+K050,carried,comp,pyquil,year,conflict,2020 vs 2016,doi_record~readme,1,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+K159,carried,comp,pyrolite,license,conflict,'cc-by-4.0' vs 'CSIRO Open Source Software Licence Agreement (Variation of t',doi_record~pypi,1,conflict,1,,,8/15/26
+K157,carried,comp,pyrolite,title,conflict,fuzzy=42 | 'morganjwilliams/pyrolite: 0.3.6' vs 'pyrolite',cff~pypi;doi_record~pypi,2,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K158,carried,comp,pyrolite,version,conflict,'0.3.6' vs '0.3.7',cff~pypi;doi_record~pypi,2,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K236,carried,intra,pyrolite,authors,conflict,|A|=13 |B|=8 matchedA=2 matchedB=2,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K238,carried,intra,pyrolite,doi,conflict,10.5281/zenodo.2545106 vs 10.21105/joss.02314,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K235,carried,intra,pyrolite,title,conflict,fuzzy=45 | 'morganjwilliams/pyrolite: 0.3.6' vs 'pyrolite: Python for geochemistry',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K237,carried,intra,pyrolite,year,conflict,2024 vs 2020,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K106,carried,comp,pyvista,authors,conflict,|A|=2 |B|=2 matchedA=1 matchedB=1,cff~doi_record;doi_record~readme,2,conflict,1,,,8/14/26
+K107,carried,comp,pyvista,title,conflict,fuzzy=13 | 'PyVista: 3D plotting and mesh analysis through a streamlined interface for the Visualization Toolkit (VTK)' vs 'pyvista',cff~pypi;doi_record~pypi;readme~pypi,3,conflict,1,,,8/14/26
+K098,carried,comp,pyzx,title,conflict,fuzzy=15 | 'PyZX: Large Scale Automated Diagrammatic Reasoning' vs 'pyzx',readme~pypi,1,conflict,1,,,8/14/26
+K063,carried,comp,qdk,authors,conflict,|A|=1 |B|=10 matchedA=0 matchedB=0,cff~doi_record,1,conflict,1,,doi points to an ACM paper while cff only list Microsoft as author,8/14/26
+K067,carried,comp,qdk,authors,conflict,|A|=10 |B|=1 matchedA=0 matchedB=0,doi_record~readme;doi_record~pypi,2,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+K062,carried,comp,qdk,title,conflict,fuzzy=6 | 'Microsoft Quantum Development Kit' vs 'Q#',cff~doi_record,1,conflict,1,,doi points to an ACM paper,8/14/26
+K065,carried,comp,qdk,title,conflict,fuzzy=11 | 'Microsoft Quantum Development Kit' vs 'qdk',cff~pypi;readme~pypi,2,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+K066,carried,comp,qdk,title,conflict,fuzzy=6 | 'Q#' vs 'Microsoft Quantum Development Kit',doi_record~readme,1,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+K068,carried,comp,qdk,title,conflict,fuzzy=50 | 'Q#' vs 'qdk',doi_record~pypi,1,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+K064,carried,comp,qdk,year,conflict,2024 vs 2018,cff~doi_record,1,conflict,1,,doi points to an ACM paper,8/14/26
+K087,carried,comp,qibo,authors,conflict,|A|=29 |B|=1 matchedA=0 matchedB=0,doi_record~pypi,1,conflict,1,,"pypi only use one-line of ""The Qibo team""",8/14/26
+K086,carried,comp,qibo,title,conflict,fuzzy=29 | 'qiboteam/qibo: qibo 0.3.4' vs 'qibo',doi_record~pypi,1,conflict,1,,no signifant difference. Pypi include the version number in title,8/14/26
+K088,carried,comp,qibo,version,minor,v-prefix only,doi_record~pypi,1,minor,1,,,8/14/26
+K036,carried,comp,qiskit,title,conflict,fuzzy=38 | 'Qiskit/qiskit: Qiskit  2.5.1' vs 'qiskit',doi_record~pypi,1,conflict,1,,,8/14/26
+K037,carried,comp,qiskit,version,conflict,'2.5.1' vs '2.5.2',doi_record~pypi,1,conflict,1,,,8/14/26
+K256,carried,exact,qiskit,license,exact,alias-normalized,doi_record~pypi,1,exact,1,,,8/15/26
+K096,carried,comp,qrisp,authors,conflict,|A|=7 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,readme point to a Arxiv paper as in bibtex,8/14/26
+K095,carried,comp,qrisp,title,conflict,fuzzy=11 | 'Qrisp: A Framework for Compilable High-Level Programming of Gate-Based Quantum Computers' vs 'qrisp',readme~pypi,1,conflict,1,,readme point to a Arxiv paper as in bibtex,8/14/26
+K078,carried,comp,qsim,version,minor,v-prefix only,cff~doi_record;doi_record~pypi,2,minor,1,,pypi doesn't contains 'v',8/14/26
+K217,carried,intra,qsim,authors,conflict,|A|=1 |B|=18 matchedA=0 matchedB=0,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K219,carried,intra,qsim,doi,conflict,10.5281/zenodo.4067237 vs 10.48550/arxiv.2111.02396,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K216,carried,intra,qsim,title,conflict,fuzzy=10 | 'qsim' vs 'Simulations of Quantum Circuits with Approximate Noise using qsim and Cirq',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K218,carried,intra,qsim,year,conflict,2025 vs 2021,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K085,carried,comp,qualtran,license,conflict,'Apache-2.0' vs 'cc-by-4.0',cff~doi_record,1,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+K082,carried,comp,qualtran,title,conflict,fuzzy=25 | 'Qualtran' vs 'Expressing and Analyzing Quantum Algorithms with Qualtran',cff~doi_record;cff~readme,2,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+K083,carried,comp,qualtran,version,conflict,'0.6.0' vs '1',cff~doi_record,1,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+K084,carried,comp,qualtran,year,minor,2025 vs 2024 (staleness?),cff~doi_record;cff~readme,2,minor,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+K222,carried,intra,qualtran,title,conflict,fuzzy=25 | 'Qualtran' vs 'Expressing and Analyzing Quantum Algorithms with Qualtran',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K041,carried,comp,quantum,year,minor,2020 vs 2021 (staleness?),doi_record~readme,1,minor,1,"","",8/14/26
+K255,carried,exact,quantum,authors,exact,n=29,doi_record~readme,1,exact,1,,paper-ref: both surfaces list the article's authors; values identical,8/15/26
+K089,carried,comp,recirq,authors,conflict,|A|=1 |B|=2 matchedA=0 matchedB=0,zenodo_json~readme;doi_record~readme,2,exact,0,parse-error,"entity ""Quantum AI team and collaborators"" split at "" and "" on one surface",8/14/26
+K274,carried,exact,recirq,license,exact,alias-normalized,zenodo_json~doi_record,1,exact,1,,"same, just case difference",8/15/26
+K042,carried,comp,rustworkx,title,conflict,fuzzy=29 | 'rustworkx: A High-Performance Graph Library for Python' vs 'rustworkx',zenodo_json~pypi;doi_record~pypi,2,conflict,1,,,8/14/26
+K257,carried,exact,rustworkx,license,exact,alias-normalized,doi_record~pypi,1,exact,1,,,8/15/26
+K174,carried,comp,sourmash,authors,conflict,|A|=29 |B|=36 matchedA=29 matchedB=29,cff~zenodo_json;cff~doi_record,2,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K176,carried,comp,sourmash,authors,conflict,|A|=29 |B|=1 matchedA=0 matchedB=0,cff~pypi,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K181,carried,comp,sourmash,authors,conflict,|A|=36 |B|=1 matchedA=0 matchedB=0,zenodo_json~pypi;doi_record~pypi,2,conflict,1,,,8/15/26
+K175,carried,comp,sourmash,title,conflict,"fuzzy=16 | 'sourmash v4: A multitool to quickly search, compare, and analyze genomic and metagenomic data sets' vs 'sourmash'",cff~pypi;cff~npm;doi_record~pypi;doi_record~npm,4,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K177,carried,comp,sourmash,version,conflict,'v1.0.0' vs 'v4.8.9',codemeta~doi_record,1,conflict,1,,,8/15/26
+K179,carried,comp,sourmash,version,conflict,'v1.0.0' vs '4.9.4',codemeta~pypi,1,conflict,1,,,8/15/26
+K180,carried,comp,sourmash,version,conflict,'v1.0.0' vs '0.23.0',codemeta~npm,1,conflict,1,,,8/15/26
+K182,carried,comp,sourmash,version,conflict,'v4.8.9' vs '4.9.4',doi_record~pypi,1,conflict,1,,,8/15/26
+K183,carried,comp,sourmash,version,conflict,'v4.8.9' vs '0.23.0',doi_record~npm,1,conflict,1,,,8/15/26
+K184,carried,comp,sourmash,version,conflict,'4.9.4' vs '0.23.0',pypi~npm,1,conflict,1,,,8/15/26
+K178,carried,comp,sourmash,year,conflict,2016 vs 2024,codemeta~doi_record,1,conflict,1,,,8/15/26
+K271,carried,exact,sourmash,doi,exact,(exact: open data/normalized/sourmash.json),cff~doi_record,1,exact,1,,same but cff's preferred citation points to the article,8/15/26
+K253,carried,exact,sourmash,license,exact,alias-normalized,codemeta~npm,1,exact,1,,,8/15/26
+K246,carried,exact,sourmash,title,exact,(exact: open data/normalized/sourmash.json),pypi~npm,1,exact,1,,same name but different version between pypi and npm,8/15/26
+K245,carried,intra,sourmash,doi,conflict,10.5281/zenodo.11557883 vs 10.21105/joss.06830,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K076,carried,comp,stim,license,conflict,'Apache-2.0' vs 'Apache 2',cff~pypi,1,conflict,1,,cff points to paper as preferred citation,8/14/26
+K073,carried,comp,stim,title,conflict,fuzzy=18 | 'Stim' vs 'Stim: a fast stabilizer circuit simulator',cff~doi_record;cff~readme,2,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+K077,carried,comp,stim,title,conflict,fuzzy=18 | 'Stim: a fast stabilizer circuit simulator' vs 'stim',doi_record~pypi;readme~pypi,2,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+K075,carried,comp,stim,version,conflict,'1.14.0' vs '1.16.0',cff~pypi,1,conflict,1,,cff points to paper as preferred citation,8/14/26
+K074,carried,comp,stim,year,conflict,2024 vs 2021,cff~doi_record;cff~readme,2,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+K266,carried,exact,stim,doi,exact,(exact: open data/normalized/stim.json),doi_record~readme,1,exact,1,,same but both point to article,8/15/26
+K214,carried,intra,stim,title,conflict,fuzzy=18 | 'Stim' vs 'Stim: a fast stabilizer circuit simulator',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K215,carried,intra,stim,year,conflict,2024 vs 2021,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K145,carried,comp,sunpy,authors,conflict,|A|=35 |B|=268 matchedA=28 matchedB=28,cff~zenodo_json,1,conflict,1,,zenodo_json has more as creator,8/15/26
+K146,carried,comp,sunpy,authors,conflict,|A|=35 |B|=34 matchedA=34 matchedB=34,cff~doi_record,1,conflict,1,,"doi_record has two null creator, but rest are the same",8/15/26
+K149,carried,comp,sunpy,authors,conflict,|A|=268 |B|=34 matchedA=28 matchedB=28,zenodo_json~doi_record,1,conflict,1,,zenodo_json has more as creator,8/15/26
+K151,carried,comp,sunpy,license,conflict,'BSD-2-Clause' vs 'BSD-3-Clause',zenodo_json~pypi,1,conflict,1,,,8/15/26
+K144,carried,comp,sunpy,title,conflict,fuzzy=49 | 'The SunPy Project: Open Source Development and Status of the Version 1.0 Core Package' vs 'sunpy: A Core Package for Solar Physics',cff~zenodo_json,1,conflict,1,,,8/15/26
+K147,carried,comp,sunpy,title,conflict,fuzzy=11 | 'The SunPy Project: Open Source Development and Status of the Version 1.0 Core Package' vs 'sunpy',cff~pypi;doi_record~pypi,2,conflict,1,,,8/15/26
+K148,carried,comp,sunpy,title,conflict,fuzzy=49 | 'sunpy: A Core Package for Solar Physics' vs 'The SunPy Project: Open Source Development and Status of the Version 1.0 Core Package',zenodo_json~doi_record,1,conflict,1,,,8/15/26
+K150,carried,comp,sunpy,title,conflict,fuzzy=23 | 'sunpy: A Core Package for Solar Physics' vs 'sunpy',zenodo_json~pypi,1,conflict,1,,,8/15/26
+K016,carried,comp,targets,authors,conflict,|A|=1 |B|=24 matchedA=0 matchedB=0,codemeta~doi_record,1,conflict,1,,,8/14/26
+K018,carried,comp,targets,doi,conflict,targets vs 10.5281/zenodo.18555866,codemeta~doi_record,1,conflict,1,,,8/14/26
+K019,carried,comp,targets,license,conflict,'MIT' vs 'cc-by-4.0',codemeta~doi_record,1,conflict,1,,,8/14/26
+K015,carried,comp,targets,title,conflict,fuzzy=39 | 'targets: Dynamic Function-Oriented 'Make'-Like Declarative Pipelines' vs 'ropensci/targets: tar_igraph()',codemeta~doi_record,1,conflict,1,,,8/14/26
+K017,carried,comp,targets,version,conflict,'1.11.1' vs '1.12.0',codemeta~doi_record,1,conflict,1,,,8/14/26
+K114,carried,comp,textnets,authors,conflict,|A|=1 |B|=1 matchedA=0 matchedB=0,cff~readme;doi_record~readme,2,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+K115,carried,comp,textnets,doi,conflict,10.5281/zenodo.3866676 vs 10.21105/joss.02594,cff~readme;doi_record~readme,2,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+K118,carried,comp,textnets,license,conflict,'cc-by-4.0' vs 'GPL-3.0-only',doi_record~pypi,1,conflict,1,,,8/14/26
+K117,carried,comp,textnets,version,conflict,'v0.9.5' vs '0.10.4',doi_record~pypi,1,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+K116,carried,comp,textnets,year,conflict,2024 vs 2020,doi_record~readme,1,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+K230,carried,intra,textnets,doi,conflict,10.5281/zenodo.3866676 vs 10.21105/joss.02594,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K229,carried,intra,textnets,title,conflict,fuzzy=25 | 'textnets' vs 'textnets: A Python Package for Text Analysis with Networks',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K251,carried,exact,thread-pool,doi,exact,(exact: open data/normalized/thread-pool.json),cff~doi_record,1,exact,1,,,8/15/26
+K090,carried,comp,toqito,title,conflict,fuzzy=67 | 'toqito -- Theory of quantum information toolkit: A Python package for studying quantum information' vs 'toqito: A Python toolkit for quantum information',doi_record~readme,1,conflict,1,,,8/14/26
+K092,carried,comp,toqito,title,conflict,fuzzy=12 | 'toqito -- Theory of quantum information toolkit: A Python package for studying quantum information' vs 'toqito',doi_record~pypi,1,conflict,1,,,8/14/26
+K094,carried,comp,toqito,title,conflict,fuzzy=23 | 'toqito: A Python toolkit for quantum information' vs 'toqito',readme~pypi,1,conflict,1,,,8/14/26
+K093,carried,comp,toqito,version,conflict,'v1.0' vs '1.3.1',doi_record~pypi,1,conflict,1,,,8/14/26
+K091,carried,comp,toqito,year,minor,2020 vs 2021 (staleness?),doi_record~readme,1,minor,1,,,8/14/26
+K047,carried,comp,torchquantum,authors,conflict,|A|=8 |B|=1 matchedA=0 matchedB=0,readme~pypi,1,conflict,1,,readme's bibtex points to a paper,8/14/26
+K046,carried,comp,torchquantum,title,conflict,fuzzy=28 | 'Quantumnas: Noise-adaptive search for robust quantum circuits' vs 'torchquantum',readme~pypi,1,conflict,1,,readme's bibtex points to a paper,8/14/26
+K014,carried,comp,trilinos,authors,minor,name variants; n=33,doi_record~readme,1,minor,1,,"both doi and readme point to the journal instead of the softare itself, as well as cff",8/14/26
+K013,carried,comp,trilinos,title,conflict,fuzzy=17 | 'Trilinos' vs 'Trilinos: Enabling Scientific Computing across Diverse Hardware Architectures at Scale',cff~doi_record;cff~readme,2,conflict,1,,"cff 's title and doi belongs to the journal at  'preferred-citatin' section, whie reame bibtex also pint to the journal",8/14/26
+K201,carried,intra,trilinos,title,conflict,fuzzy=17 | 'Trilinos' vs 'Trilinos: Enabling Scientific Computing across Diverse Hardware Architectures at Scale',cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K163,carried,comp,xclim,authors,conflict,|A|=26 |B|=38 matchedA=26 matchedB=26,cff~zenodo_json,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K164,carried,comp,xclim,authors,conflict,|A|=26 |B|=25 matchedA=25 matchedB=25,cff~doi_record,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K166,carried,comp,xclim,authors,conflict,|A|=38 |B|=25 matchedA=25 matchedB=25,zenodo_json~doi_record,1,conflict,1,,,8/15/26
+K165,carried,comp,xclim,title,conflict,fuzzy=22 | 'xclim: xarray-based climate data analytics' vs 'xclim',cff~pypi;zenodo_json~pypi;doi_record~pypi,3,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K167,carried,comp,xclim,version,conflict,'v0.43.0' vs '0.61.1',doi_record~pypi,1,conflict,1,,,8/15/26
+K249,carried,exact,xclim,license,exact,alias-normalized,doi_record~pypi,1,exact,1,,doi has an extra license,8/15/26
+K273,carried,exact,xclim,title,exact,(exact: open data/normalized/xclim.json),cff~zenodo_json,1,exact,1,,same but both point to article,8/15/26
+K242,carried,intra,xclim,authors,conflict,|A|=26 |B|=25 matchedA=25 matchedB=25,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K243,carried,intra,xclim,doi,conflict,10.5281/zenodo.7916446 vs 10.21105/joss.05415,cff~cff_preferred,1,conflict,1,,cff's preferred citaion points to a article,8/15/26
+K060,carried,comp,yao-jl,authors,minor,name variants; n=4,cff~doi_record;cff~readme,2,minor,1,,"they have point to paper title, but appears as preferred citation in cff and bibtex for readme, but readme's paper is the Arxv Preprint",8/14/26
+K061,carried,comp,yao-jl,year,minor,2020 vs 2019 (staleness?),cff~readme;doi_record~readme,2,minor,1,,"they have point to paper title, but appears as preferred citation in cff and bibtex for readme, but readme's paper is the Arxv Preprint",8/14/26
+K247,carried,exact,zfp,doi,exact,(exact: open data/normalized/zfp.json),cff~doi_record,1,exact,1,,same but both point to article,8/15/26
+K252,carried,exact,zfp,year,exact,(exact: open data/normalized/zfp.json),cff~doi_record,1,exact,1,,same but both point to article,8/15/26

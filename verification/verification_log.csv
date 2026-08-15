@@ -1,0 +1,339 @@
+project_id,surface_a,surface_b,field,pipeline_verdict,hand_verdict,agree,issue_class,note,checked
+martini,cff,doi_record,authors,minor,minor,1,,,08/15/26
+martini,doi_record,readme,authors,minor,minor,1,,,08/15/26
+neon-utilities-python,cff,doi_record,title,exact,exact,1,,,08/15/26
+agni,cff,doi_record,authors,conflict,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+agni,codemeta,doi_record,authors,conflict,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+agni,zenodo_json,doi_record,authors,conflict,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+agni,cff,doi_record,title,conflict,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+agni,zenodo_json,doi_record,title,conflict,conflict,1,,cff and doi_record points to Journal paper,8/14/26
+agni,cff,codemeta,year,minor,minor,1,,cff and doi_record points to Journal paper,8/14/26
+agni,codemeta,doi_record,year,minor,minor,1,,cff and doi_record points to Journal paper,8/14/26
+agni,codemeta,zenodo_json,version,exact,exact,1,,,8/15/26
+amrex,zenodo_json,readme,authors,conflict,conflict,1,,readme's preferred caitaiton point to journal and journal author,8/14/26
+amrex,doi_record,readme,authors,conflict,conflict,1,,readme's preferred caitaiton point to journal and journal author,8/14/26
+amrex,doi_record,readme,doi,conflict,conflict,1,,readme's preferred caitaiton point to journal and journal doi,8/14/26
+amrex,doi_record,readme,title,conflict,conflict,1,,readme's preferred caitaiton point to journal and journal title,8/14/26
+amrex,doi_record,readme,year,conflict,conflict,1,,readme's preferred caitaiton point to journal and journal year,8/14/26
+bibat,doi_record,pypi,license,conflict,conflict,1,,,8/15/26
+bibat,doi_record,readme,title,conflict,conflict,1,,,8/15/26
+bibat,doi_record,pypi,title,conflict,conflict,1,,,8/15/26
+bibat,readme,pypi,title,conflict,conflict,1,,,8/15/26
+bibat,doi_record,pypi,version,conflict,conflict,1,,,8/15/26
+biopsykit,cff,doi_record,authors,conflict,conflict,1,,cff has preferred cation to a Journal,8/14/26
+biopsykit,cff,doi_record,title,conflict,conflict,1,,cff has preferred cation to a Journal,8/14/26
+biopsykit,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+biopsykit,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+biopsykit,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+catalyst,cff,readme,doi,conflict,conflict,1,,"readme point to a Journal in bibtex, which is also the preferred citation in cff",8/14/26
+catalyst,doi_record,readme,doi,conflict,conflict,1,,"readme point to a Journal in bibtex, which is also the preferred citation in cff",8/14/26
+catalyst,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+cblearn,doi_record,readme,doi,exact,exact,1,,,8/15/26
+cheminformant,cff,zenodo_json,title,conflict,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,cff,doi_record,title,conflict,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,cff,readme,title,conflict,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,zenodo_json,pypi,title,conflict,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,doi_record,pypi,title,conflict,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,readme,pypi,title,conflict,conflict,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,cff,doi_record,year,minor,minor,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,cff,readme,year,minor,minor,1,,readme's preferred caitaiton point to journal,8/15/26
+cheminformant,cff,doi_record,authors,exact,exact,1,,same but both point to article,8/15/26
+cheminformant,zenodo_json,readme,authors,exact,exact,1,,same but both point to article,8/15/26
+cheminformant,doi_record,readme,doi,exact,exact,1,,same but both point to article,8/15/26
+cheminformant,zenodo_json,doi_record,title,exact,exact,1,,same but zenodo points to softare while doi_record points to article,8/15/26
+cheminformant,cff,pypi,version,exact,exact,1,,,8/15/26
+cheminformant,doi_record,readme,year,exact,exact,1,,same but both point to article,8/15/26
+cirq,cff,pypi,authors,conflict,minor,0,wrong-threshold,"Cirq Developers' vs 'The Cirq Developers', same entity; fuzzy fell below 90",8/14/26
+cirq,doi_record,pypi,authors,conflict,minor,0,wrong-threshold,"Cirq Developers' vs 'The Cirq Developers', same entity; fuzzy fell below 90",8/14/26
+cirq,cff,doi_record,doi,conflict,conflict,1,,cff doi is for archive of all versions. Doi_crecords for current version,8/14/26
+cirq,cff,doi_record,version,minor,minor,1,,only doi has 'v',8/14/26
+cirq,doi_record,pypi,version,minor,minor,1,,only doi has 'v',8/14/26
+covalent,doi_record,pypi,authors,conflict,conflict,1,,,8/14/26
+covalent,doi_record,pypi,license,conflict,conflict,1,,,8/14/26
+covalent,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+covalent,doi_record,pypi,version,conflict,conflict,1,,,8/14/26
+cuda-quantum,cff,pypi,authors,conflict,conflict,1,,"""The CUDA-Q development team"" for doi and cff while ""NVIDIA Corporation & Affiliates"" for pypi",8/14/26
+cuda-quantum,doi_record,pypi,authors,conflict,conflict,1,,"""The CUDA-Q development team"" for doi and cff while ""NVIDIA Corporation & Affiliates"" for pypi",8/14/26
+cuda-quantum,cff,pypi,title,conflict,conflict,1,,,8/14/26
+cuda-quantum,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+cuda-quantum,doi_record,pypi,version,conflict,conflict,1,,,8/14/26
+dace,cff,readme,authors,conflict,conflict,1,,"both cff's preferred ciation and readme's bibtex are pointing to authors of the conference paper, while cff also has software info",8/14/26
+dace,cff,pypi,authors,conflict,conflict,1,,"pypi points to the team ""SPCL @ ETH Zurich"" while cff points to the conference journal author",8/14/26
+dace,readme,pypi,authors,conflict,conflict,1,,readme prefered citation is for conference paper while pypi has team name as author,8/14/26
+dace,cff,readme,title,conflict,exact,1,,"both cff's preferred ciation and readme's bibtex are pointing to a conference paper, while cff also has software info",8/14/26
+dace,cff,pypi,title,conflict,conflict,1,,cff points to conference paper while pypi point to software (github),8/14/26
+dace,readme,pypi,title,conflict,conflict,1,,readme prefered citation is for conference paper while pypi has team name as author,8/14/26
+dace,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+dace,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+dair,doi_record,readme,authors,exact,exact,1,,same but both point to article,8/15/26
+dair,doi_record,readme,year,exact,exact,1,,same but both point to article,8/15/26
+dart,cff,doi_record,authors,conflict,conflict,1,,cff has preferred ciatation to a Journal.,8/14/26
+dart,doi_record,readme,authors,conflict,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+dart,cff,readme,doi,conflict,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+dart,doi_record,readme,doi,conflict,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+dart,cff,doi_record,title,conflict,conflict,1,,cff has preferred ciatation to a Journal.,8/14/26
+dart,doi_record,readme,title,conflict,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+dart,cff,doi_record,version,minor,minor,1,,cff has preferred ciatation to a Journal.,8/14/26
+dart,cff,readme,year,conflict,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+dart,doi_record,readme,year,conflict,conflict,1,,"cff has preferred ciatation to a Journal, which is also the bibtex of readme",8/14/26
+dart,cff,doi_record,doi,exact,exact,1,,same but cff's preferred citation points to the article,8/15/26
+dart,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+dart,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+dealii,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+dealii,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+debyecalculator,cff,pypi,authors,conflict,conflict,1,,cff has preferred cation to a Journal,8/14/26
+debyecalculator,doi_record,pypi,authors,conflict,conflict,1,,cff has preferred cation to a Journal,8/14/26
+debyecalculator,cff,pypi,title,conflict,conflict,1,,cff has preferred cation to a Journal,8/14/26
+debyecalculator,doi_record,pypi,title,conflict,conflict,1,,cff has preferred cation to a Journal,8/14/26
+debyecalculator,doi_record,pypi,version,conflict,conflict,1,,,8/14/26
+debyecalculator,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+earthpy,zenodo_json,doi_record,authors,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,zenodo_json,readme,authors,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,zenodo_json,pypi,authors,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,doi_record,pypi,authors,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,readme,pypi,authors,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,doi_record,pypi,title,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,readme,pypi,title,conflict,conflict,1,,readme's bibtex and doi_records points to a paper,8/15/26
+earthpy,doi_record,readme,doi,exact,exact,1,,,8/15/26
+elmerfem,cff,doi_record,authors,conflict,conflict,1,,,8/14/26
+elmerfem,cff,doi_record,license,conflict,conflict,1,,,8/14/26
+elmerfem,cff,doi_record,title,conflict,conflict,1,,,8/14/26
+envpool,readme,pypi,authors,conflict,conflict,1,,"pypi only has """"EnvPool Contributors""",8/14/26
+envpool,readme,pypi,title,conflict,conflict,1,,,8/14/26
+eomaps,readme,pypi,title,conflict,conflict,1,,,8/15/26
+felupe,cff,doi_record,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+felupe,doi_record,pypi,license,conflict,conflict,1,,,8/15/26
+felupe,cff,doi_record,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+felupe,cff,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+felupe,doi_record,pypi,title,conflict,conflict,1,,,8/15/26
+felupe,doi_record,pypi,version,conflict,conflict,1,,,8/15/26
+felupe,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+geant4,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+geant4,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+genomesizer,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+geometry,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+grassmann-jl,cff,doi_record,doi,conflict,conflict,1,,cff has preferred citation pointing to an article,8/14/26
+grassmann-jl,cff,doi_record,version,conflict,conflict,1,,cff has preferred citation pointing to an article,8/14/26
+grassmann-jl,cff,doi_record,year,minor,minor,1,,cff has preferred citation pointing to an article,8/14/26
+grassmann-jl,cff,doi_record,title,exact,exact,1,,same but cff's preferred citation points to the article,8/15/26
+grassmann-jl,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+grassmann-jl,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+hdf5,cff,doi_record,doi,conflict,conflict,1,,"cff has """"Zenodo DOI for all versions"" for ""10.5281/zenodo.17808614"" in the identifiers section, while doi_record has ""10.5281/zenodo.21716856"" for ""Hierarchical Data Format, version 5""",8/14/26
+horovod,readme,pypi,authors,conflict,conflict,1,,"pypi only has ""The Horovod Authors""",8/14/26
+horovod,readme,pypi,title,conflict,conflict,1,,,8/14/26
+kernel,cff,doi_record,doi,conflict,conflict,1,,"cff include concept DOI and viersioned DOI, while doi_record 's doi is in datacite registray",8/14/26
+kernel,cff,doi_record,version,conflict,conflict,1,,,8/14/26
+kernel,cff,doi_record,year,minor,minor,1,,,8/14/26
+kernel,cff,doi_record,title,exact,exact,1,,same but cff's preferred citation points to the article,8/15/26
+kernel,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+kernel,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+kernel,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+kernel,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+kokkos,cff,cff_preferred,authors,conflict,conflict,1,,,8/15/26
+kokkos,cff,cff_preferred,title,conflict,conflict,1,,,8/15/26
+martini,cff,readme,doi,conflict,conflict,1,,cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+martini,doi_record,readme,doi,conflict,conflict,1,,cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+martini,cff,doi_record,title,conflict,conflict,1,,cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+martini,doi_record,readme,title,conflict,conflict,1,,paper-ref: cff has preferred citation and readme's bibtext all pointing to a Jounal article,8/15/26
+martini,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mdentropy,doi_record,readme,authors,conflict,conflict,0,parse-error,LaTeX-escaped accent (Hern'andez vs Hernández) blocked one name match,8/15/26
+mfem,cff,doi_record,authors,conflict,conflict,1,,,8/14/26
+mfem,cff,doi_record,title,conflict,conflict,1,,,8/14/26
+mfem,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mfem,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mfem,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+montepy,cff,doi_record,authors,conflict,conflict,1,,cff's preferred citation points to an article,8/15/26
+montepy,cff,doi_record,title,conflict,conflict,1,,cff's preferred citation points to an article,8/15/26
+montepy,cff,pypi,title,conflict,conflict,1,,cff's preferred citation points to an article,8/15/26
+montepy,doi_record,pypi,version,conflict,conflict,1,,,8/15/26
+montepy,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mpi4py,cff,pypi,authors,conflict,conflict,1,,cff used preferred citation to a Journal,8/14/26
+mpi4py,doi_record,pypi,authors,conflict,conflict,1,,cff used preferred citation to a Journal,8/14/26
+mpi4py,cff,pypi,title,conflict,conflict,1,,"doi and record has same name whiel pypi has a different name, but cff asked to use preferred citation, which is a journal",8/14/26
+mpi4py,doi_record,pypi,title,conflict,conflict,1,,"doi and record has same name whiel pypi has a different name, but cff asked to use preferred citation, which is a journal",8/14/26
+mpi4py,doi_record,pypi,license,exact,exact,1,,"same, just case difference",8/15/26
+mpi4py,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mpi4py,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mpi4py,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+mpich,doi_record,pypi,authors,conflict,conflict,1,,"pypi used ""MPICH Team"" only while readme's bibtex point to Jounal",8/14/26
+mpich,readme,pypi,authors,conflict,conflict,1,,"pypi used ""MPICH Team"" only while readme's bibtex point to Jounal",8/14/26
+mpich,doi_record,pypi,title,exact,exact,1,,"same, just case difference",8/15/26
+neon-utilities-python,cff,doi_record,version,minor,minor,1,,,8/15/26
+neon-utilities-python,cff,doi_record,authors,exact,exact,1,,,8/15/26
+nsevdx,cff,pypi,authors,conflict,conflict,1,,pypi has the first author only,8/15/26
+nsevdx,doi_record,pypi,authors,conflict,conflict,1,,pypi has the first author only,8/15/26
+nsevdx,cff,pypi,title,conflict,conflict,1,,cff and doi has same name with version difference. Pypi has a short name with same vversion of cff,8/15/26
+nsevdx,doi_record,pypi,title,conflict,conflict,1,,cff and doi has same name with version difference. Pypi has a short name with same vversion of cff,8/15/26
+nsevdx,cff,doi_record,version,conflict,conflict,1,,,8/15/26
+nsevdx,doi_record,pypi,version,conflict,conflict,1,,,8/15/26
+openfermion,cff,doi_record,authors,conflict,conflict,1,,"cff has only ""The OpenFermion Developers"" for software author, but also prefereed caitation to the paper authors, which is the one in doi_record",8/14/26
+openfermion,cff,doi_record,title,conflict,conflict,1,,"cff has attributes for software, but also prefereed caitation to the paper, which is the one in doi_record",8/14/26
+openfermion,cff,doi_record,year,conflict,conflict,1,,"cff has 2026 as the year for software, with preferred citation to doi_record's paper with a different year",8/14/26
+openfermion,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+openfermion,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+openfermion,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+openmc,cff,doi_record,authors,conflict,conflict,1,,,8/14/26
+openmc,cff,doi_record,title,conflict,conflict,1,,"both cff's preferred ciation and doi are pointing to the journal ""OpenMC: A state-of-the-art Monte Carlo code for research and development"" instead of cff's software ""OpenMC""",8/14/26
+openmc,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+openmc,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+plenoptic,cff,readme,authors,conflict,conflict,1,,readme has bibtext points to an article,8/15/26
+plenoptic,doi_record,readme,authors,conflict,conflict,1,,readme has bibtext points to an article,8/15/26
+plenoptic,cff,pypi,authors,conflict,conflict,1,,pypi only has one author,8/15/26
+plenoptic,doi_record,pypi,authors,conflict,conflict,1,,pypi only has one author,8/15/26
+plenoptic,readme,pypi,authors,conflict,conflict,1,,readme has bibtext points to an article,8/15/26
+plenoptic,cff,pypi,title,conflict,conflict,1,,,8/15/26
+plenoptic,doi_record,pypi,title,conflict,conflict,1,,,8/15/26
+plenoptic,readme,pypi,title,conflict,conflict,1,,,8/15/26
+plenoptic,doi_record,readme,year,conflict,conflict,1,,readme has bibtext points to an article,8/15/26
+pygmt,cff,pypi,title,conflict,conflict,1,,,8/15/26
+pygmt,doi_record,pypi,title,conflict,conflict,1,,,8/15/26
+pygmt,cff,doi_record,version,minor,minor,1,,,8/15/26
+pygmt,doi_record,pypi,version,minor,minor,1,,,8/15/26
+pygmt,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pygmt,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pygmt,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyquil,doi_record,readme,authors,conflict,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+pyquil,doi_record,pypi,authors,conflict,conflict,1,,"pypi has """"Rigetti Computing"""" as general author",8/14/26
+pyquil,readme,pypi,authors,conflict,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+pyquil,doi_record,pypi,license,conflict,conflict,1,,,8/14/26
+pyquil,doi_record,readme,title,conflict,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+pyquil,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+pyquil,readme,pypi,title,conflict,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+pyquil,doi_record,pypi,version,conflict,conflict,1,,,8/14/26
+pyquil,doi_record,readme,year,conflict,conflict,1,,readme's bibtex points to a arXiv paper,8/14/26
+pyrolite,doi_record,pypi,license,conflict,conflict,1,,,8/15/26
+pyrolite,cff,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,doi_record,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,cff,pypi,version,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,doi_record,pypi,version,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyrolite,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+pyvista,cff,doi_record,authors,conflict,conflict,1,,,8/14/26
+pyvista,doi_record,readme,authors,conflict,conflict,1,,,8/14/26
+pyvista,cff,pypi,title,conflict,conflict,1,,,8/14/26
+pyvista,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+pyvista,readme,pypi,title,conflict,conflict,1,,,8/14/26
+pyzx,readme,pypi,title,conflict,conflict,1,,,8/14/26
+qdk,cff,doi_record,authors,conflict,conflict,1,,doi points to an ACM paper while cff only list Microsoft as author,8/14/26
+qdk,doi_record,readme,authors,conflict,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+qdk,doi_record,pypi,authors,conflict,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+qdk,cff,doi_record,title,conflict,conflict,1,,doi points to an ACM paper,8/14/26
+qdk,cff,pypi,title,conflict,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+qdk,readme,pypi,title,conflict,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+qdk,doi_record,readme,title,conflict,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+qdk,doi_record,pypi,title,conflict,conflict,1,,doi points to an ACM paper while cff and pypi for software,8/14/26
+qdk,cff,doi_record,year,conflict,conflict,1,,doi points to an ACM paper,8/14/26
+qibo,doi_record,pypi,authors,conflict,conflict,1,,"pypi only use one-line of ""The Qibo team""",8/14/26
+qibo,doi_record,pypi,title,conflict,conflict,1,,no signifant difference. Pypi include the version number in title,8/14/26
+qibo,doi_record,pypi,version,minor,minor,1,,,8/14/26
+qiskit,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+qiskit,doi_record,pypi,version,conflict,conflict,1,,,8/14/26
+qiskit,doi_record,pypi,license,exact,exact,1,,,8/15/26
+qrisp,readme,pypi,authors,conflict,conflict,1,,readme point to a Arxiv paper as in bibtex,8/14/26
+qrisp,readme,pypi,title,conflict,conflict,1,,readme point to a Arxiv paper as in bibtex,8/14/26
+qsim,cff,doi_record,version,minor,minor,1,,pypi doesn't contains 'v',8/14/26
+qsim,doi_record,pypi,version,minor,minor,1,,pypi doesn't contains 'v',8/14/26
+qsim,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+qsim,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+qsim,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+qsim,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+qualtran,cff,doi_record,license,conflict,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+qualtran,cff,doi_record,title,conflict,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+qualtran,cff,readme,title,conflict,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+qualtran,cff,doi_record,version,conflict,conflict,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+qualtran,cff,doi_record,year,minor,minor,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+qualtran,cff,readme,year,minor,minor,1,,doi_record points to arXibv paper while cff has this as preferred ciatation and readme has it in bibtex,8/14/26
+qualtran,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+quantum,doi_record,readme,year,minor,minor,1,,,8/14/26
+quantum,doi_record,readme,authors,exact,exact,1,,paper-ref: both surfaces list the article's authors; values identical,8/15/26
+recirq,zenodo_json,readme,authors,conflict,exact,0,parse-error,"entity ""Quantum AI team and collaborators"" split at "" and "" on one surface",8/14/26
+recirq,doi_record,readme,authors,conflict,exact,0,parse-error,"entity ""Quantum AI team and collaborators"" split at "" and "" on one surface",8/14/26
+recirq,zenodo_json,doi_record,license,exact,exact,1,,"same, just case difference",8/15/26
+rustworkx,zenodo_json,pypi,title,conflict,conflict,1,,,8/14/26
+rustworkx,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+rustworkx,doi_record,pypi,license,exact,exact,1,,,8/15/26
+sourmash,cff,zenodo_json,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,cff,doi_record,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,cff,pypi,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,zenodo_json,pypi,authors,conflict,conflict,1,,,8/15/26
+sourmash,doi_record,pypi,authors,conflict,conflict,1,,,8/15/26
+sourmash,cff,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,cff,npm,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,doi_record,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,doi_record,npm,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sourmash,codemeta,doi_record,version,conflict,conflict,1,,,8/15/26
+sourmash,codemeta,pypi,version,conflict,conflict,1,,,8/15/26
+sourmash,codemeta,npm,version,conflict,conflict,1,,,8/15/26
+sourmash,doi_record,pypi,version,conflict,conflict,1,,,8/15/26
+sourmash,doi_record,npm,version,conflict,conflict,1,,,8/15/26
+sourmash,pypi,npm,version,conflict,conflict,1,,,8/15/26
+sourmash,codemeta,doi_record,year,conflict,conflict,1,,,8/15/26
+sourmash,cff,doi_record,doi,exact,exact,1,,same but cff's preferred citation points to the article,8/15/26
+sourmash,codemeta,npm,license,exact,exact,1,,,8/15/26
+sourmash,pypi,npm,title,exact,exact,1,,same name but different version between pypi and npm,8/15/26
+sourmash,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+stim,cff,pypi,license,conflict,conflict,1,,cff points to paper as preferred citation,8/14/26
+stim,cff,doi_record,title,conflict,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+stim,cff,readme,title,conflict,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+stim,doi_record,pypi,title,conflict,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+stim,readme,pypi,title,conflict,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+stim,cff,pypi,version,conflict,conflict,1,,cff points to paper as preferred citation,8/14/26
+stim,cff,doi_record,year,conflict,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+stim,cff,readme,year,conflict,conflict,1,,readme and cff points to paper in bibtexand preferred citation,8/14/26
+stim,doi_record,readme,doi,exact,exact,1,,same but both point to article,8/15/26
+stim,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+stim,cff,cff_preferred,year,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+sunpy,cff,zenodo_json,authors,conflict,conflict,1,,zenodo_json has more as creator,8/15/26
+sunpy,cff,doi_record,authors,conflict,conflict,1,,"doi_record has two null creator, but rest are the same",8/15/26
+sunpy,zenodo_json,doi_record,authors,conflict,conflict,1,,zenodo_json has more as creator,8/15/26
+sunpy,zenodo_json,pypi,license,conflict,conflict,1,,,8/15/26
+sunpy,cff,zenodo_json,title,conflict,conflict,1,,,8/15/26
+sunpy,cff,pypi,title,conflict,conflict,1,,,8/15/26
+sunpy,doi_record,pypi,title,conflict,conflict,1,,,8/15/26
+sunpy,zenodo_json,doi_record,title,conflict,conflict,1,,,8/15/26
+sunpy,zenodo_json,pypi,title,conflict,conflict,1,,,8/15/26
+targets,codemeta,doi_record,authors,conflict,conflict,1,,,8/14/26
+targets,codemeta,doi_record,doi,conflict,conflict,1,,,8/14/26
+targets,codemeta,doi_record,license,conflict,conflict,1,,,8/14/26
+targets,codemeta,doi_record,title,conflict,conflict,1,,,8/14/26
+targets,codemeta,doi_record,version,conflict,conflict,1,,,8/14/26
+textnets,cff,readme,authors,conflict,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+textnets,doi_record,readme,authors,conflict,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+textnets,cff,readme,doi,conflict,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+textnets,doi_record,readme,doi,conflict,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+textnets,doi_record,pypi,license,conflict,conflict,1,,,8/14/26
+textnets,doi_record,pypi,version,conflict,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+textnets,doi_record,readme,year,conflict,conflict,1,,"cff has preferred cation to a Journal, which is also the bibtex in readme",8/14/26
+textnets,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+textnets,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+thread-pool,cff,doi_record,doi,exact,exact,1,,,8/15/26
+toqito,doi_record,readme,title,conflict,conflict,1,,,8/14/26
+toqito,doi_record,pypi,title,conflict,conflict,1,,,8/14/26
+toqito,readme,pypi,title,conflict,conflict,1,,,8/14/26
+toqito,doi_record,pypi,version,conflict,conflict,1,,,8/14/26
+toqito,doi_record,readme,year,minor,minor,1,,,8/14/26
+torchquantum,readme,pypi,authors,conflict,conflict,1,,readme's bibtex points to a paper,8/14/26
+torchquantum,readme,pypi,title,conflict,conflict,1,,readme's bibtex points to a paper,8/14/26
+trilinos,doi_record,readme,authors,minor,minor,1,,"both doi and readme point to the journal instead of the softare itself, as well as cff",8/14/26
+trilinos,cff,doi_record,title,conflict,conflict,1,,"cff 's title and doi belongs to the journal at  'preferred-citatin' section, whie reame bibtex also pint to the journal",8/14/26
+trilinos,cff,readme,title,conflict,conflict,1,,"cff 's title and doi belongs to the journal at  'preferred-citatin' section, whie reame bibtex also pint to the journal",8/14/26
+trilinos,cff,cff_preferred,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,cff,zenodo_json,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,cff,doi_record,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,zenodo_json,doi_record,authors,conflict,conflict,1,,,8/15/26
+xclim,cff,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,zenodo_json,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,doi_record,pypi,title,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,doi_record,pypi,version,conflict,conflict,1,,,8/15/26
+xclim,doi_record,pypi,license,exact,exact,1,,doi has an extra license,8/15/26
+xclim,cff,zenodo_json,title,exact,exact,1,,same but both point to article,8/15/26
+xclim,cff,cff_preferred,authors,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+xclim,cff,cff_preferred,doi,conflict,conflict,1,,cff's preferred citaion points to a article,8/15/26
+yao-jl,cff,doi_record,authors,minor,minor,1,,"they have point to paper title, but appears as preferred citation in cff and bibtex for readme, but readme's paper is the Arxv Preprint",8/14/26
+yao-jl,cff,readme,authors,minor,minor,1,,"they have point to paper title, but appears as preferred citation in cff and bibtex for readme, but readme's paper is the Arxv Preprint",8/14/26
+yao-jl,cff,readme,year,minor,minor,1,,"they have point to paper title, but appears as preferred citation in cff and bibtex for readme, but readme's paper is the Arxv Preprint",8/14/26
+yao-jl,doi_record,readme,year,minor,minor,1,,"they have point to paper title, but appears as preferred citation in cff and bibtex for readme, but readme's paper is the Arxv Preprint",8/14/26
+zfp,cff,doi_record,doi,exact,exact,1,,same but both point to article,8/15/26
+zfp,cff,doi_record,year,exact,exact,1,,same but both point to article,8/15/26

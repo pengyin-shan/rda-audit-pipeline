@@ -31,9 +31,29 @@ def test_no_citation():
     assert out["bibtex"] is None
     assert out["dois_in_citation_section"] == []
 
+BIB_FORMS = {
+    "one_liner": "@article{x, title={One Liner}, year={2024}}",
+    "close_same_line": "@article{x,\n  title = {T},\n  year = {2024}}",
+    "internal_braces": "@article{x,\n  title = {A {GPU} Tool},\n  year = {2024}\n}",
+    "double_braces": "@article{x,\n  title = {{Protected}},\n  year = {2024}\n}",
+    "quoted": '@article{x,\n  title = "Quoted",\n  year = "2024"\n}',
+    "bare_year": "@article{x,\n  title = {T},\n  year = 2024\n}",
+    "email_at": "@misc{x,\n  title = {T},\n  note = {a@b.edu},\n  year = {2024}\n}",
+}
+
+def test_bibtex_forms():
+    for name, bib in BIB_FORMS.items():
+        out = parse_readme("## Citation\n```\n" + bib + "\n```\n")
+        assert out["bibtex"] is not None, f"{name}: entry not matched"
+        assert "title" in out["bibtex"], f"{name}: title lost"
+        assert "year" in out["bibtex"], f"{name}: year lost"
+    braces = parse_readme("## Citation\n@article{x,\n title={A {GPU} Tool},\n year={2024}\n}")
+    assert braces["bibtex"]["title"] == "A GPU Tool"
+
 def main():
     test_parse_readme()
     test_no_citation()
+    test_bibtex_forms()
     print("all readme parser tests pass")
 
 if __name__ == "__main__":

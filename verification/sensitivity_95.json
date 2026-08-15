@@ -1,0 +1,37 @@
+{
+  "n_projects_with_2plus_surfaces": 62,
+  "n_projects_with_core_conflict": 52,
+  "pct_projects_disagreeing_with_themselves": 83.9,
+  "median_pairwise_agreement": 0.5,
+  "agreement_title": 0.436,
+  "agreement_authors": 0.459,
+  "agreement_version": 0.447,
+  "agreement_year": 0.78,
+  "agreement_doi": 0.77,
+  "agreement_by_domain": {
+    "astronomy": 0.621,
+    "chem-materials": 0.684,
+    "earth-climate": 0.568,
+    "engineering": 0.5,
+    "general-tools": 0.484,
+    "hpc": 0.487,
+    "life-sciences": 0.513,
+    "math-stats-ml": 0.45,
+    "physics": 0.417,
+    "qc": 0.588,
+    "social-sciences": 0.533,
+    "unmapped": 0.55
+  },
+  "agreement_by_stratum": {
+    "joss": 0.649,
+    "pyopensci": 0.483,
+    "sc26": 0.555
+  },
+  "pct_core_conflict_by_stratum": {
+    "joss": 63.6,
+    "pyopensci": 93.3,
+    "sc26": 86.1
+  },
+  "cff_projects_with_preferred_citation": 32,
+  "cff_projects_root_vs_preferred_conflict": 28
+}

@@ -8,8 +8,20 @@ Zenodo DOIs resolve via DataCite; Crossref is the fallback for paper DOIs.
 Live-tested against both registries 2026-08-12 (smoke corpus).
 Run AFTER harvest-github.
 """
+import re
 from ..common import http_get, load_snapshot, save_snapshot
 
+DOI_PATTERN = re.compile(r"10\.\d{4,9}/\S+")
+
+def _clean_doi(value):
+    if not value:
+        return None
+    d = str(value).strip().lower()
+    d = re.sub(r"^https?://(dx\.)?doi\.org/", "", d)
+    d = re.sub(r"/(status|badge)\.(svg|png|gif)\S*$", "", d)
+    d = d.rstrip(".,;#*")
+    m = DOI_PATTERN.search(d)
+    return m.group(0) if m else None
 
 def _doi_from_cff(cfg, pid):
     snap = load_snapshot(cfg, pid, "cff")
@@ -17,27 +29,24 @@ def _doi_from_cff(cfg, pid):
     if not isinstance(cff, dict):
         return None
     if cff.get("doi"):
-        return str(cff["doi"]).strip(), "cff.doi"
+        return _clean_doi(cff["doi"]), "cff.doi"
     for ident in cff.get("identifiers", []) or []:
         if isinstance(ident, dict) and ident.get("type") == "doi" and ident.get("value"):
-            return str(ident["value"]).strip(), "cff.identifiers"
+            return _clean_doi(ident["value"]), "cff.identifiers"
     return None
-
 
 def _doi_from_readme(cfg, pid):
     snap = load_snapshot(cfg, pid, "readme")
     payload = (snap or {}).get("payload", {})
     for d in payload.get("dois_in_citation_section", []):
-        return d, "readme.citation_section"
+        return _clean_doi(d), "readme.citation_section"
     return None
-
 
 def pick_doi(row, cfg):
     if (row.get("doi") or "").strip():
         return row["doi"].strip(), "corpus.csv"
     pid = row["project_id"]
     return _doi_from_cff(cfg, pid) or _doi_from_readme(cfg, pid) or (None, None)
-
 
 def fetch_datacite(doi, cfg):
     r = http_get(f"https://api.datacite.org/dois/{doi}", cfg.ua())
@@ -65,7 +74,6 @@ def fetch_datacite(doi, cfg):
         "relatedIdentifiers": a.get("relatedIdentifiers", []),
     }
 
-
 def fetch_crossref(doi, cfg):
     r = http_get(f"https://api.crossref.org/works/{doi}", cfg.ua())
     if r is None:
@@ -84,7 +92,6 @@ def fetch_crossref(doi, cfg):
         "publisher": m.get("publisher"),
     }
 
-
 def resolve_doi(row, cfg):
     """Resolve and snapshot one project's DOI record. Returns the record or None."""
     pid = row["project_id"]
@@ -102,7 +109,6 @@ def resolve_doi(row, cfg):
     save_snapshot(cfg, pid, "doi_record", rec)
     print(f"[{pid}] {doi} ({source}) -> {rec['registry']}")
     return rec
-
 
 def run_harvest_doi(cfg, rows):
     for row in rows:

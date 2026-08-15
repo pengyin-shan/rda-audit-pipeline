@@ -62,6 +62,10 @@ def main(argv=None):
     args = ap.parse_args(argv)
     cfg = Config.from_env(corpus_path=getattr(args, "corpus", None),
                           data_dir=getattr(args, "data_dir", None))
+    if not cfg.github_token and args.cmd in ("profile", "harvest-github",
+                                             "all", "audit-one", "probe-candidates"):
+        print("WARNING: GITHUB_TOKEN not set; unauthenticated GitHub limit is "
+              "60 req/hr and this run WILL stall. Ctrl-C and export GITHUB_TOKEN.")
     if args.cmd == "adapt-corpus":
         adapt_sampler_corpus(args.sampler_corpus, args.out,
                              detected_registry_path=args.detected_registry)

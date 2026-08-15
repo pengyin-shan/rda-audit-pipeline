@@ -1,9 +1,9 @@
 project_id,github_repo,domain,doi,pypi_package,npm_package,stratum,source
 horovod,horovod/horovod,hpc,,horovod,,sc26,sc26_corpus
 taskflow,taskflow/taskflow,hpc,,,,sc26,sc26_corpus
-fluidx3d,projectphysx/fluidx3d,hpc,,fluidx3d,,sc26,sc26_corpus
+fluidx3d,projectphysx/fluidx3d,hpc,,,,sc26,sc26_corpus
 spack,spack/spack,hpc,,,,sc26,sc26_corpus
-thread-pool,bshoshany/thread-pool,hpc,10.1016/j.softx.2024.101687,,,sc26,sc26_corpus
+thread-pool,bshoshany/thread-pool,hpc,,,,sc26,sc26_corpus
 cuda-oxide,nvlabs/cuda-oxide,hpc,,,,sc26,sc26_corpus
 blis,flame/blis,hpc,,,,sc26,sc26_corpus
 kokkos,kokkos/kokkos,hpc,,,,sc26,sc26_corpus

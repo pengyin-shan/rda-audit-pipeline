@@ -6,9 +6,53 @@ CITE_HEADING_RE = re.compile(
     r"^(#{1,6})\s*.*\b(citing|citation[s]?|how to cite|cite (?:this|us|the))\b.*$",
     re.IGNORECASE | re.MULTILINE,
 )
-BIBTEX_RE = re.compile(r"@(?:article|misc|software|inproceedings|book|techreport)\s*\{[^@]*?\n\}", re.DOTALL | re.IGNORECASE)
-BIB_FIELD_RE = re.compile(r"\b(title|author|year|doi|version)\s*=\s*[{\"]([^{}\"]+)[}\"]",
-                          re.IGNORECASE)
+BIB_START_RE = re.compile(
+    r"@(article|misc|software|inproceedings|book|techreport|manual|"
+    r"phdthesis|mastersthesis|inbook)\s*\{", re.IGNORECASE)
+BIB_KEY_RE = re.compile(r"\b(title|author|year|doi|version)\s*=\s*", re.IGNORECASE)
+
+def _match_braces(text, open_idx):
+    depth = 0
+    for j in range(open_idx, len(text)):
+        if text[j] == "{":
+            depth += 1
+        elif text[j] == "}":
+            depth -= 1
+            if depth == 0:
+                return j
+    return -1
+
+
+def _extract_bibtex_entry(text):
+    m = BIB_START_RE.search(text)
+    if not m:
+        return None
+    open_idx = text.index("{", m.start())
+    close = _match_braces(text, open_idx)
+    return text[m.start():close + 1] if close != -1 else None
+
+
+def _bib_fields(entry):
+    out = {}
+    for m in BIB_KEY_RE.finditer(entry):
+        key = m.group(1).lower()
+        i = m.end()
+        if i >= len(entry):
+            continue
+        c = entry[i]
+        if c == "{":
+            j = _match_braces(entry, i)
+            val = entry[i + 1:j] if j != -1 else ""
+        elif c == '"':
+            j = entry.find('"', i + 1)
+            val = entry[i + 1:j] if j != -1 else ""
+        else:
+            m2 = re.match(r"[^,\n}]+", entry[i:])
+            val = m2.group(0) if m2 else ""
+        val = re.sub(r"[{}]", "", val).strip()
+        if val and key not in out:
+            out[key] = val
+    return out
 
 def extract_citation_section(text):
     """Return the text from a 'Citing/Citation/How to cite' heading to the next
@@ -23,13 +67,16 @@ def extract_citation_section(text):
     return section.strip()[:5000]  # cap: some READMEs are enormous
 
 def extract_bibtex_fields(text):
-    m = BIBTEX_RE.search(text)
-    if not m:
+    """First BibTeX entry in text -> field dict. Brace-matching extraction:
+    handles one-line entries, closing braces on field lines, nested/protective
+    braces, quoted and bare values, and @ characters inside the entry."""
+    entry = _extract_bibtex_entry(text)
+    if not entry:
         return None
-    fields = {}
-    for k, v in BIB_FIELD_RE.findall(m.group(0)):
-        fields.setdefault(k.lower(), re.sub(r"[{}]", "", v).strip())
-    fields["_raw"] = m.group(0)[:3000]
+    fields = _bib_fields(entry)
+    if not fields:
+        return None
+    fields["_raw"] = entry[:3000]
     return fields
 
 def find_dois(text):
@@ -40,6 +87,7 @@ def find_dois(text):
             seen.add(d.lower())
             out.append(d)
     return out
+
 
 def parse_readme(text):
     section = extract_citation_section(text)
