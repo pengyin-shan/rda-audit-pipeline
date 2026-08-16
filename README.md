@@ -14,6 +14,7 @@ export AUDIT_CONTACT=you@example.edu
 - `github_repo` is the `owner/name` form; `doi` is your hand-curated concept DOI when you know it (it wins over auto-discovery)
 - `stratum` is the analysis stratum (`sc26` | `joss` | `pyopensci`)
 - The baseline-sampler writes a DIFFERENT schema; never feed it directly. The loader refuses it; convert with `adapt-corpus` (below).
+> Refer to https://github.com/pengyin-shan/baseline-sampler for baseline-sampler details.
 
 ## End-to-end sequence for the real study (order matters)
 ```bash
