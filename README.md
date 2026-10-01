@@ -7,7 +7,7 @@ Audit pipeline for cross-surface consistency of software citation metadata: harv
 **Data, snapshots, verification log:** https://doi.org/10.5281/zenodo.21969769
 
 ## Status
-v0.2.2 produced every number reported in the paper. v0.2.3 adds LICENSE, CITATION.cff and this README; measurement code is identical. v.2.4 update information for paper.
+v0.2.2 produced every number reported in the paper. v0.2.3 adds LICENSE, CITATION.cff and this README; measurement code is identical. v0.2.4 update information for paper. v0.2.5 updates pyproject.toml for author information and CITATION.cff to reflect the new release date (2026-10-01) and version (0.2.5).
 
 Tags v0.2.0 and v0.2.1 point to the same squashed commit (public history was flattened before release); the stage history those tags name is documented in the paper, §3.5.
 
@@ -75,6 +75,7 @@ The public history of this repository was flattened when it was made public; tag
 - **v0.2.3** — packaging only (LICENSE, CITATION.cff, README);
   measurement code identical to v0.2.2.
 - **v0.2.4** — updated citation and README to reflect the new DOI for the paper (10.48550/arXiv.2608.17159).
+- **v0.2.5** — updated pyproject.toml for author information and CITATION.cff to reflect the new release date (2026-10-01) and version (0.2.5).
 
 ## Run log (study provenance)
 - probe guard bug: duplicate host check after prefix strip rejected all candidates; removed 2026-08-12, no probe output existed prior.
@@ -87,4 +88,4 @@ The public history of this repository was flattened when it was made public; tag
 - For adaptivecpp, lcoi, or thread-pool rows, the verdicts are now built on paper-DOI records that the projects themselves declared.
 - Registry detections were hand-reviewed; two (qiskit npm, fluidx3d PyPI) were removed as packages not controlled by the project.
 - Hand verification identified one systematic normalization defect (DataCite creator records carrying full names in familyName caused token duplication and depressed author matching); it was corrected and the affected comparisons re-scored and re-verified.
-- Freeze raw snapshots (sha256): 4b6ea7793336c1d333a5cc39375b6ac5385cc1f1bcdddc65b2575515a3e66c67  
+- Freeze raw snapshots (sha256): b76f47aae6b63a1589aae6161695a7561fed9f632b28e7fe7351d98b597c8f06  
