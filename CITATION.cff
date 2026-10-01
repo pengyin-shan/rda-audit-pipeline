@@ -9,4 +9,12 @@ authors:
 license: Apache-2.0
 version: 0.2.3
 date-released: 2026-08-16
+doi: 10.5281/zenodo.21969695
 repository-code: "https://github.com/pengyin-shan/rda-audit-pipeline"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21969695
+    description: Zenodo concept DOI (all versions)
+  - type: doi
+    value: 10.48550/arXiv.2608.17159
+    description: Paper describing the method and results

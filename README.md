@@ -1,5 +1,23 @@
 # RDA Metadata-Consistency Audit Pipeline
-**Status: v0.2.2 produced all measurements reported in [paper]; see Data and Code Availability for the corpus, snapshots, and verification log. v0.2.3 added License and CITATION.cff.**
+
+Audit pipeline for cross-surface consistency of software citation metadata:
+harvest a project's self-description surfaces (CITATION.cff, codemeta.json,
+.zenodo.json, DOI record, PyPI/npm, README), normalize to six fields, score
+every pair, and report where they disagree.
+
+**Paper:** Shan, P. (2026). A Multi-Surface Consistency Audit of Software
+Citation Metadata. arXiv:2608.17159. https://doi.org/10.48550/arXiv.2608.17159
+**Software:** https://doi.org/10.5281/zenodo.21969695 (concept DOI) ·
+**Data, snapshots, verification log:** https://doi.org/10.5281/zenodo.21969769
+
+## Status
+v0.2.2 produced every number reported in the paper. v0.2.3 adds LICENSE,
+CITATION.cff and this README; measurement code is identical. Tags v0.2.0 and
+v0.2.1 point to the same squashed commit (public history was flattened before
+release); the stage history those tags name is documented in the paper, §3.5.
+
+## Cite
+See [CITATION.cff](CITATION.cff), or use GitHub's "Cite this repository" button.
 
 ## Setup
 ```bash
@@ -45,7 +63,28 @@ python3 -m rda_audit analyze
 # or, for clean re-runs:  python3 -m rda_audit all   (or python3 run_all.py)
 ```
 
-## Note
+## Version history
+
+The public history of this repository was flattened when it was made
+public; tags v0.2.0 and v0.2.1 therefore point to the same squashed
+commit. The version designations refer to instrument stages documented
+in the accompanying paper (Section 3.5):
+
+- **v0.2.0** — pre-run instrument. Two defect classes found in pre-run
+  live testing (YAML date serialization in CITATION.cff snapshots;
+  .zenodo.json license objects) were fixed before any measurement.
+- **v0.2.1** — first-run corrections: DOI-string hygiene (resolver-URL
+  prefixes, badge-image suffixes, non-DOI identifier values).
+- **v0.2.2** — verification-phase corrections (brace-matching BibTeX
+  extraction; PyPI license normalization; DataCite familyName
+  token-duplication fix), plus the final verification log and
+  sensitivity outputs. **v0.2.2 produced every number reported in the
+  paper.**
+- **v0.2.3** — packaging only (LICENSE, CITATION.cff, README);
+  measurement code identical to v0.2.2.
+- **v0.2.4** — updated citation and README to reflect the new DOI for the paper (10.48550/arXiv.2608.17159).
+
+## Run log (study provenance)
 - probe guard bug: duplicate host check after prefix strip rejected all candidates; removed 2026-08-12, no probe output existed prior.
 - canonical_repo truncated deep GitHub URLs to owner/name, 2026-08-12; 12 such records in frame, 1 in window, no R1/dedup side effects.
 - Record JOSS accepted 15 and pyOpenSci accepted 15 at commit 171c8d856ea7cd335536c6c871c9968cf5b350ac.
@@ -56,3 +95,4 @@ python3 -m rda_audit analyze
 - For adaptivecpp, lcoi, or thread-pool rows, the verdicts are now built on paper-DOI records that the projects themselves declared.
 - Registry detections were hand-reviewed; two (qiskit npm, fluidx3d PyPI) were removed as packages not controlled by the project.
 - Hand verification identified one systematic normalization defect (DataCite creator records carrying full names in familyName caused token duplication and depressed author matching); it was corrected and the affected comparisons re-scored and re-verified.
+- Freeze raw snapshots (sha256): 4b6ea7793336c1d333a5cc39375b6ac5385cc1f1bcdddc65b2575515a3e66c67  

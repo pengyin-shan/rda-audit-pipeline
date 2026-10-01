@@ -4,3 +4,7 @@ __pycache__/
 .env
 *.xlsx
 *.egg-info/
+# release and data artifacts live on GitHub Releases / Zenodo, not in git
+SHA256SUMS
+*.tar.gz
+raw-snapshots-*.zip
