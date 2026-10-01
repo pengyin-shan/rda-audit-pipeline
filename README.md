@@ -1,20 +1,15 @@
 # RDA Metadata-Consistency Audit Pipeline
 
-Audit pipeline for cross-surface consistency of software citation metadata:
-harvest a project's self-description surfaces (CITATION.cff, codemeta.json,
-.zenodo.json, DOI record, PyPI/npm, README), normalize to six fields, score
-every pair, and report where they disagree.
+Audit pipeline for cross-surface consistency of software citation metadata: harvest a project's self-description surfaces (CITATION.cff, codemeta.json, .zenodo.json, DOI record, PyPI/npm, README), normalize to six fields, score every pair, and report where they disagree.
 
-**Paper:** Shan, P. (2026). A Multi-Surface Consistency Audit of Software
-Citation Metadata. arXiv:2608.17159. https://doi.org/10.48550/arXiv.2608.17159
+**Paper:** Shan, P. (2026). A Multi-Surface Consistency Audit of Software Citation Metadata. arXiv:2608.17159. https://doi.org/10.48550/arXiv.2608.17159
 **Software:** https://doi.org/10.5281/zenodo.21969695 (concept DOI) ·
 **Data, snapshots, verification log:** https://doi.org/10.5281/zenodo.21969769
 
 ## Status
-v0.2.2 produced every number reported in the paper. v0.2.3 adds LICENSE,
-CITATION.cff and this README; measurement code is identical. Tags v0.2.0 and
-v0.2.1 point to the same squashed commit (public history was flattened before
-release); the stage history those tags name is documented in the paper, §3.5.
+v0.2.2 produced every number reported in the paper. v0.2.3 adds LICENSE, CITATION.cff and this README; measurement code is identical. v.2.4 update information for paper.
+
+Tags v0.2.0 and v0.2.1 point to the same squashed commit (public history was flattened before release); the stage history those tags name is documented in the paper, §3.5.
 
 ## Cite
 See [CITATION.cff](CITATION.cff), or use GitHub's "Cite this repository" button.
@@ -65,10 +60,7 @@ python3 -m rda_audit analyze
 
 ## Version history
 
-The public history of this repository was flattened when it was made
-public; tags v0.2.0 and v0.2.1 therefore point to the same squashed
-commit. The version designations refer to instrument stages documented
-in the accompanying paper (Section 3.5):
+The public history of this repository was flattened when it was made public; tags v0.2.0 and v0.2.1 therefore point to the same squashed commit. The version designations refer to instrument stages documented in the accompanying paper (Section 3.5):
 
 - **v0.2.0** — pre-run instrument. Two defect classes found in pre-run
   live testing (YAML date serialization in CITATION.cff snapshots;
